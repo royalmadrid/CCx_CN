@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>第一章 连续调试介绍 &#8212; CCx_zh 0.0.1 文档</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="第二章 连续调试的优势" href="Chapter2.html" />
+    <link rel="prev" title="连续调试-改善建筑舒适性和能效" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="Chapter2.html" title="第二章 连续调试的优势"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="连续调试-改善建筑舒适性和能效"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CCx_zh 0.0.1 文档</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>第一章 连续调试介绍<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>With the energy crisis of the early 1970s came the realization that buildings could be
+made more efficient without sacrificing comfort. Over the last 30 years, the building
+industry has made revolutionary changes: chiller systems have decreased their
+power requirements by a factor of two, from more than 1 kW/ton to less than 0.5
+kW/ton; the use of variable air volume systems has become common practice; and
+the use of building automation systems has become the norm, with digital controls
+increasingly replacing pneumatics. Advances in HVAC technology have greatly improved
+building comfort and significantly decreased building energy consumption.
+The technological advances have increased the importance of proper operational
+practices in achieving the efficiency potential of the HVAC systems. While reducing
+energy use is a noble goal, it must not compromise comfort. Occupant comfort
+and productivity must be maintained or improved.</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>NOTE</strong></p>
+<p><strong>Building commissioning has emerged as the preferred method of ensuring that
+building systems are installed and operated to provide the performance envisioned
+by the designer.</strong></p>
+</div>
+<p>Building commissioning has emerged as the preferred method of ensuring that
+building systems are installed and operated to provide the performance envisioned
+by the designer. ASHRAE has detailed the commissioning process in Guideline
+1-1996 [ASHRAE 1996]. A number of other building commissioning guidelines
+have been developed by different organizations, with the same basic objective as
+the ASHRAE guideline, i.e., to ensure proper operation of the building according
+to the design intent.</p>
+<p>In 1999, DOE developed a practical guide for commissioning existing buildings
+[Haasl and Sharp 1999]. Several building commissioning processes are discussed
+in this guide. These processes include: new building commissioning, existing building
+commissioning or retro-commissioning, Continuous Commissioning  <sup>SM</sup> and recommissioning.
+While most commissioning processes focus on bringing building
+operation to the original design intent, Continuous Commissioning  <sup>SM</sup> is different <a class="footnote-reference brackets" href="#id4" id="id2">1</a>.
+Continuous Commissioning  <sup>SM</sup> (CC  <sup>SM</sup>) focuses on optimizing HVAC system operation
+and control for the existing building conditions. This is an important distinction.
+Based on Continuous Commissioning  <sup>SM</sup> results from more than 130 buildings,
+the average measured utility savings are about 20%, with simple paybacks often in
+less than two years. These results are based on the experience of the Texas Engineering
+Experiment Station’s Energy Systems Laboratory at Texas A&amp;M University
+during the last 10 years [Liu et al. 1994, Claridge et al. 1994, Liu et al. 1999,
+Claridge et al. 2000]. Continuous Commissioning  <sup>SM</sup> maintains long-term savings
+by ongoing monitoring of energy savings with followup commissioning, as needed;
+improves the system reliability and building comfort by optimizing system operation
+and control schedules based on actual building conditions; upgrades the operating
+staff’s skills by allowing direct participation of O&amp;M staff; and reduces O&amp;M
+costs.</p>
+<p><em>This chapter defines</em> CC<sup>SM</sup>  <em>and provides an introduction to the</em> CC<sup>SM</sup> <em>process. The
+detailed objectives, methods, and procedures are discussed for each step of the</em> CC<sup>SM</sup>
+<em>process. This discussion includes the major goals of each step, the methods needed
+to achieve the specific goals and the procedures needed to conduct</em> CC<sup>SM</sup> <em>wisely and
+efficiently.</em></p>
+<div class="section" id="definition">
+<h2>1.1 Definition<a class="headerlink" href="#definition" title="永久链接至标题">¶</a></h2>
+<p>Continuous Commissioning  <sup>SM</sup> (CC  <sup>SM</sup>) is an ongoing process to resolve operating problems,
+improve comfort, optimize energy use and identify retrofits for existing commercial and
+institutional buildings and central plant facilities.</p>
+<p>CC  <sup>SM</sup> focuses on improving overall system control and operations for the building,
+as it is currently utilized, and on meeting existing facility needs. It goes beyond an
+operations and maintenance program. It does not ensure that the systems function as
+originally designed, but ensures that the building and systems operate optimally to
+meet the current requirements. During the CC  <sup>SM</sup> process, a comprehensive engineering
+evaluation is conducted for both building functionality and system functions.
+The optimal operational parameters and schedules are developed based on actual
+building conditions and current occupancy requirements. An integrated approach is
+used to implement these optimal schedules to ensure local and global system optimization
+and persistence of the improved operational schedules.</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>NOTE</strong></p>
+<p>The CC  <sup>SM</sup> team consists of a project manager, one or more CC  <sup>SM</sup> engineers and CC  <sup>SM</sup>
+technicians, and one or more designated members of the facility operating team.</p>
+</div>
+<p>The CC  <sup>SM</sup> team consists of a project manager, one or more CC  <sup>SM</sup> engineers and CC  <sup>SM</sup>
+technicians <a class="footnote-reference brackets" href="#id5" id="id3">2</a>, and one or more designated members of the facility operating team. The primary role of the project manager is to coordinate the activities of building
+personnel and the commissioning team and schedule project progress. The project manager can be an owner representative or a CC  <sup>SM</sup> contractor representative. The
+primary responsibilities of the CC  <sup>SM</sup> engineer are to:</p>
+<ul class="simple">
+<li><p>Develop metering and field measurement plans</p></li>
+<li><p>Develop improved operational and control schedules and set points</p></li>
+<li><p>Make necessary programming changes to the building automation system</p></li>
+<li><p>Supervise technicians implementing mechanical systems changes</p></li>
+<li><p>Estimate potential performance changes and energy savings</p></li>
+<li><p>Conduct an engineering analysis of the system changes</p></li>
+<li><p>Write a project report</p></li>
+</ul>
+<p>The CC  <sup>SM</sup> engineer should have the qualifications to perform the work specified.
+The CC  <sup>SM</sup> technician will conduct field measurements and implement mechanical,
+electrical, and control system program modifications and changes, under the direction
+of the CC  <sup>SM</sup> engineer.</p>
+</div>
+<div class="section" id="process">
+<h2>1.2 Process<a class="headerlink" href="#process" title="永久链接至标题">¶</a></h2>
+<p>The CC  <sup>SM</sup> process consists of two phases. The first phase is the project development
+phase, that identifies the buildings and facilities to be included in the project
+and develops the project scope. At the end of this phase, the CC  <sup>SM</sup> scope is clearly
+defined and a CC  <sup>SM</sup> contract is signed. The second phase implements CC  <sup>SM</sup> and
+verifies project performance.</p>
+<p>This phase includes six steps:</p>
+<ul class="simple">
+<li><p>Develop the CC  <sup>SM</sup> plan and form the project team</p></li>
+<li><p>Develop performance baselines</p></li>
+<li><p>Conduct system measurements and develop CC  <sup>SM</sup> measures</p></li>
+<li><p>Implement CC  <sup>SM</sup> measures</p></li>
+<li><p>Document comfort improvements and energy savings</p></li>
+<li><p>Keep the commissioning continuous</p></li>
+</ul>
+<p><strong>Phase 1: Project Development</strong></p>
+<p><em>Step 1: Identify Buildings or Facilities</em></p>
+<p><strong>Objective</strong></p>
+<p>Screen potential CC  <sup>SM</sup> targets with minimal effort to identify buildings or facilities
+that will receive a CC  <sup>SM</sup> audit. The CC  <sup>SM</sup> target can be a building, an entire facility,
+or a piece of equipment. If the building is part of a complex or campus, it is desirable
+to select the entire facility as the CC  <sup>SM</sup> target since one mechanical problem
+may be rooted in another part of the building or facility.</p>
+<p><strong>Method</strong></p>
+<p>The initial CC  <sup>SM</sup> targets can be selected based on one or more of the following criteria:</p>
+<ul class="simple">
+<li><p>The target provides poor thermal comfort</p></li>
+<li><p>The target consumes excessive energy, and/or</p></li>
+<li><p>The design features of the facility HVAC systems are not fully used</p></li>
+</ul>
+<p>If one or more of the above criteria fits the description of the facility, it is likely to
+be a good candidate for CC  <sup>SM</sup>. CC  <sup>SM</sup> can be effectively implemented in buildings
+that have received energy efficiency retrofits, in newer buildings, and in existing
+buildings that have not received energy efficiency upgrades. In other words, virtually
+any building can be a potential CC  <sup>SM</sup> candidate.</p>
+<p>The CC  <sup>SM</sup> targets can be selected by the building owner or the CC  <sup>SM</sup> contractor.
+However, the building owner is usually in the best position to select the most promising
+targets because of his or her knowledge of the facility operation and costs.
+The CC  <sup>SM</sup> contractor should then perform a preliminary assessment to check the
+feasibility of using the CC  <sup>SM</sup> process on the target facilities before conducting a
+CC  <sup>SM</sup> audit.</p>
+<p>Information needed for preliminary assessment:</p>
+<ul class="simple">
+<li><p>Actual monthly utility bills (both electricity and gas) for at least 12 months
+(preferable to just a table of historical energy and demand data because meter
+reading dates are needed)</p></li>
+<li><p>General building information: size, function, major equipment, and occupancy
+schedules</p></li>
+<li><p>O&amp;M records, if available</p></li>
+<li><p>Description of any problem in the building, such as thermal comfort, indoor air quality, moisture, mildew</p></li>
+</ul>
+<p>An experienced engineer should review this information and determine the potential
+of the CC  <sup>SM</sup> process to improve comfort and reduce energy cost. The CC  <sup>SM</sup> projects
+often improve building comfort and reduce building energy consumption at the same
+time. However, some of the CC  <sup>SM</sup> measures may increase building energy consumption
+in order to satisfy room comfort and indoor air quality requirements. For example,
+providing building minimum outside air will certainly increase the cooling
+energy consumption during summer and winter than providing no outside air to the
+building. If the potential justifies a CC  <sup>SM</sup> audit, a list of preliminary commissioning
+measures for evaluation in a CC  <sup>SM</sup> audit should also be developed. If the owner is
+interested in proceeding at this point, a CC  <sup>SM</sup> audit may be performed.</p>
+<p><em>Step 2: Perform CC  :sup:`SM` Audit and Develop Project Scope</em></p>
+<p><strong>Objectives</strong></p>
+<ul class="simple">
+<li><p>Define owner’s requirements</p></li>
+<li><p>Check the availability of in-house technical support such as CC  <sup>SM</sup> technicians</p></li>
+<li><p>Identify major CC  <sup>SM</sup> measures</p></li>
+</ul>
+<p><strong>Method</strong></p>
+<p>The owner’s representative, the CC  <sup>SM</sup> project manager and the CC  <sup>SM</sup> engineer will
+meet. The expectations and interest of the building owner in comfort improvements,
+utility cost reductions and maintenance cost reductions will be discussed and documented
+in detail. The availability and technical skills of in-house technicians will
+be discussed. After this discussion, a walkthrough must be conducted to identify
+the feasibility of the owner’s expectations for comfort performance and improved
+energy performance. During the walkthrough, major CC  <sup>SM</sup> measures will be identified
+by the CC  <sup>SM</sup> engineer and project manager. An in-house technician should participate
+in the walkthrough. The CC  <sup>SM</sup> project manager will organize the audit and
+document the expectations of the building owner.</p>
+<p>Special Considerations:</p>
+<ul class="simple">
+<li><p>A complete set of mechanical and control system design documentation is
+needed</p></li>
+<li><p>The CC  <sup>SM</sup> engineer and technician will take preliminary measurements of
+equipment operating parameters</p></li>
+<li><p>Any available measured whole building level or sub-metered energy
+consumption data from stand-alone meters or the building automation system
+should be utilized</p></li>
+</ul>
+<p>A CC  <sup>SM</sup> audit report must be completed that lists and describes preliminary CC  <sup>SM</sup>
+measures, the estimated energy savings from implementation and the cost of carrying
+out the CC  <sup>SM</sup> process on the building(s) evaluated in the CC  <sup>SM</sup> audit.
+There may be more than one iteration or variation at each step described here, but
+once a contract is signed, the process moves to Phase 2 as detailed below.</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>NOTE</strong></p>
+<p>System problems should be documented based on interviews with occupants and technical staff, combined
+with field observations and measurements.</p>
+</div>
+<p><strong>Phase 2: CC  :sup:`SM` Implementation and Verification</strong></p>
+<p><em>Step 1: Develop CC  :sup:`SM` plan and form the project team</em></p>
+<p><strong>Objective</strong></p>
+<ul class="simple">
+<li><p>Develop a detailed work plan</p></li>
+<li><p>Identify the entire project team</p></li>
+<li><p>Clarify the duties of each team member</p></li>
+</ul>
+<p><strong>Method</strong></p>
+<p>The CC  <sup>SM</sup> project manager and CC  <sup>SM</sup> project engineer develop a detailed work plan
+for the project that includes major tasks, their sequence, time requirements and
+technical requirements. The work plan is then presented to the building owner or
+representative. During the meeting, the owner’s representative and in-house technicians
+who will work on the project should be identified. If in-house technicians are
+going to conduct measurements and system adjustments, additional time should be
+included in the schedule unless they are to be dedicated full-time to the CC  <sup>SM</sup> project.
+Typically, in-house technicians must continue their existing duties and cannot
+devote full time to the CC  <sup>SM</sup> effort, which results in project delays. In-house staff
+may also require additional training. The work plan may need to be modified, depending
+on the availability and skill levels of in-house staff.</p>
+<p><strong>Special Issues:</strong></p>
+<ul class="simple">
+<li><p>Availability of funding to replace/repair parts found broken</p></li>
+<li><p>Time commitment of in-house staff</p></li>
+<li><p>Training needs of in-house staff</p></li>
+</ul>
+<p><strong>Deliverable:</strong></p>
+<p>CC  <sup>SM</sup> report part 1: CC  <sup>SM</sup> plan that includes project scope and schedule, project team
+and task duties of each team member.</p>
+<p><em>Step 2: Develop performance baselines</em></p>
+<p><strong>Objectives:</strong></p>
+<ul class="simple">
+<li><p>Document existing comfort conditions</p></li>
+<li><p>Document existing system conditions</p></li>
+<li><p>Document existing energy performance</p></li>
+</ul>
+<p><strong>Method:</strong></p>
+<p>Precisely document all known comfort problems in individual rooms resulting from
+too much heating, cooling, noise, humidity, odors (especially from mold or mildew)
+or lack of outside air. Also, identify the following HVAC system problems:</p>
+<ul class="simple">
+<li><p>Valve and damper hunting</p></li>
+<li><p>Disabled systems or components</p></li>
+<li><p>Operational problems</p></li>
+<li><p>Frequently replaced parts</p></li>
+</ul>
+<p>An interview and walk-through may be required, although most of this information
+is collected during the CC  <sup>SM</sup> audit and step 1. Room comfort problems should be
+quantified using hand-held meters or portable data loggers. System problems should
+be documented based on interviews with occupants and technical staff and combined
+with field observations and measurements.</p>
+<p>Baseline energy models of building performance are necessary if energy savings are
+to be documented after commissioning the building. The baseline energy models can
+be developed using one or more of the following types of data:</p>
+<ul class="simple">
+<li><p>Short-term measured data obtained from data loggers or the EMCS system</p></li>
+<li><p>Long-term hourly or 15-minute whole building energy data, such as whole
+building electricity, cooling and heating consumption, and/or</p></li>
+<li><p>Utility bills for electricity, gas and/or chilled or hot water</p></li>
+</ul>
+<p>The whole building energy baseline models normally include whole building electricity,
+cooling energy and heating energy models. These models are generally expressed
+as functions of outside air temperature since both heating and cooling energy
+are normally weather dependent. Any component baseline models should be represented
+using the most relevant physical parameter(s) as the independent variable(s).</p>
+<p>For example, the fan motor power should be correlated with the fan airflow and the
+pump motor energy consumption should be correlated with water flow.
+Short-term measured data are often the most cost-effective and accurate if the potential
+savings from CC  <sup>SM</sup> measures are independent of the weather. For example, a
+single true power measurement can be used to develop the baseline fan energy consumption
+if the pulley were to be changed in a constant air volume system. Shortterm
+data are useful to determine the baseline for specific pieces of equipment, but
+are not reliable for baselining overall building energy use.</p>
+<p>Long-term measurements are normally required since potential savings of CC  <sup>SM</sup>
+measures are weather dependent. These measurements provide the most convincing
+evidence of the impact of CC  <sup>SM</sup> projects. Long-term data also help in continuing
+to detect/diagnose system faults during CC  <sup>SM</sup> follow-up. Although more costly than
+short-term measured data, long-term data often produce additional savings, making
+them the preferred data type. For example, unusual energy consumption patterns
+can be identified easily using long-term, short-interval measured data. “Fixing”
+these unusual patterns can result in significant energy savings. Generally speaking,
+long-term interval data for electricity, gas and thermal usage are preferred.</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>NOTE</strong></p>
+<p>Utility bills may be used to develop the energy-use baseline if the CC  <sup>SM</sup> process
+will result in energy savings that are a significant fraction (&gt;15%) of baseline use,
+and if the building functions and use patterns will remain the same throughout the
+project.</p>
+</div>
+<p>The CC  <sup>SM</sup> engineers should provide the metering option(s) that meet the project requirements
+to the building owner or representative. A metering method should be
+selected from the options presented by the CC  <sup>SM</sup> engineer and a detailed metering
+implementation plan developed. It may be necessary to hire a metering subcontractor
+if an energy information system is installed prior to implementing the CC  <sup>SM</sup>
+measures.</p>
+<p><strong>Special Considerations:</strong></p>
+<ul class="simple">
+<li><p>Use the maintenance log to help identify major system problems</p></li>
+<li><p>Select a metering plan that suits the CC  <sup>SM</sup> goals and the facility needs</p></li>
+<li><p>Always consider and measure weather data as part of the metering plan</p></li>
+<li><p>Keep meters calibrated. When the EMCS system is used for metering, both
+sensors and transmitters should be calibrated using field measurements.</p></li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<p>CC  <sup>SM</sup> report part 2: Report on Current Building Performance, including current
+energy performance, current comfort and system problems, and metering plans if
+new meters are to be installed. Alternatively, if utility bills are used to develop the
+baseline models, the report should include baseline energy models.</p>
+<p><em>Step 3: Conduct System Measurements and Develop Proposed</em> CC  <sup>SM</sup>
+<em>Measures</em></p>
+<p><strong>Objectives:</strong></p>
+<ul class="simple">
+<li><p>Identify current operating schedules, set points, and problems</p></li>
+<li><p>Develop solutions to existing problems</p></li>
+<li><p>Develop improved operation and control schedules and set points</p></li>
+<li><p>Identify potential cost effective energy retrofit measures</p></li>
+</ul>
+<p><strong>Method:</strong></p>
+<p>The CC  <sup>SM</sup> engineer should develop a detailed measurement cut-sheet for each major
+system. The cut-sheet should list all parameters to be measured and all mechanical
+and electrical parts to be checked. The CC  <sup>SM</sup> engineer should also provide the technician
+with measurement training if a local technician is used to perform system
+measurements. The CC  <sup>SM</sup> technician should follow the procedures on the cut-sheets
+to obtain the specified measurements using appropriate equipment.
+The CC  <sup>SM</sup> engineer conducts an engineering analysis to develop solutions for the existing
+problems; develops improved operation and control schedules and set points
+for terminal boxes, air handling units (AHUs), exhaust systems, water and steam
+distribution systems, heat exchangers, chillers, boilers and other components, as appropriate;
+and identifies potential cost effective energy retrofit measures.</p>
+<p><strong>Special Considerations:</strong></p>
+<ul class="simple">
+<li><p>Trend main operational parameters using the EMCS and compare with the
+measurements from the hand meters</p></li>
+<li><p>Print EMCS control sequences</p></li>
+<li><p>Verify system operation in the building and compare to EMCS schedules</p></li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<p>CC  <sup>SM</sup> report part 3: Existing System Conditions. This report includes:</p>
+<ul class="simple">
+<li><p>Existing control sequences and set points for all major equipment, such as AHU
+supply air temperatures, AHU supply static pressures, terminal box minimum
+airflow and maximum airflow values, water loop differential pressure set points
+and equipment on/off schedules</p></li>
+<li><p>List of disabled control sequences</p></li>
+<li><p>List of malfunctioning equipment and control devices</p></li>
+<li><p>Engineering solutions to the existing problems and a list of repairs required</p></li>
+<li><p>Improved control and operation sequences</p></li>
+</ul>
+<p><em>Step 4: Implement</em> CC  <sup>SM</sup> <em>Measures</em></p>
+<p><strong>Objectives:</strong></p>
+<ul class="simple">
+<li><p>Obtain approval for each CC  <sup>SM</sup> measure from the building owner’s
+representative prior to implementation</p></li>
+<li><p>Implement solutions to existing operational and comfort problems</p></li>
+<li><p>Implement and refine improved operation and control schedules</p></li>
+</ul>
+<p><strong>Method:</strong></p>
+<p>The CC  <sup>SM</sup> project manager and project engineer should present the engineering solutions
+to existing problems and the improved operational and control schedules to
+the building owner’s representative in one or more meetings. The in-house operating
+staff should be invited to the meeting(s). All critical questions should be answered.
+It is important, at this point, to get “buy-in” and approval from both the building
+owner’s representative and the operating staff. The meeting(s) will decide the following
+issues:</p>
+<ul class="simple">
+<li><p>Approval, modification or disapproval of each CC  <sup>SM</sup> measure</p></li>
+<li><p>Implementation sequence of CC  <sup>SM</sup> measures</p></li>
+<li><p>Implementation schedules</p></li>
+</ul>
+<div class="sidebar">
+<p class="sidebar-title"><strong>NOTE</strong></p>
+<p>CC  <sup>SM</sup> implementation should start by solving existing problems.</p>
+</div>
+<p>The existing comfort
+and difficult control problems are the first priority of the occupants, operating
+staff and facility owners. Solving these problems improves occupant comfort and
+increases productivity. The economic benefits from comfort improvements are
+sometimes higher than the energy cost savings, though less easily quantified. The
+successful resolution of the existing problems can also earn trust in the CC  <sup>SM</sup> engineer
+from the facility operating staff, facility management, and the occupants. This
+can lead to the team receiving support in a variety of unexpected ways.</p>
+<p>Implementation of the improved operation and control schedules should start at the
+end of the comfort delivery system, such as at the terminal boxes, and end with the
+central plant. This procedure provides benefits to the building occupants as quickly
+as possible. It also reduces the overall working load. If the process is reversed, the
+chiller plant is commissioned first. The chiller sequences are developed based on
+the current load. After building commissioning, the chiller load may be decreased
+by 30%. The chiller operating schedules are then likely to need revision.
+The CC  <sup>SM</sup> engineer should develop a detailed implementation plan that lists each
+major activity. The CC  <sup>SM</sup> technician should follow this plan in implementing the
+measures.</p>
+<p>The CC  <sup>SM</sup> engineer should closely supervise the implementation and refine the
+operational and control schedules as necessary. The CC  <sup>SM</sup> engineer should also be
+responsible for key software changes as necessary.</p>
+<p><strong>Special Considerations:</strong></p>
+<ul class="simple">
+<li><p>Ensure that the owner’s technical representative understands each major
+measure</p></li>
+<li><p>Encourage in-house technician involvement in implementation and/or have
+them implement as many measures as possible</p></li>
+<li><p>Document improvements in a timely manner</p></li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<p>CC  <sup>SM</sup> Report part 4: CC  <sup>SM</sup> Implementation. This report includes detailed documentation
+of implemented operation and control sequences, maintenance procedures for
+these measures, detailed O&amp;M guidelines and additional measures recommended
+for implementation.</p>
+<p><em>Step 5: Document comfort improvements and energy savings</em></p>
+<p><strong>Objectives:</strong></p>
+<ul class="simple">
+<li><p>Document improved comfort conditions</p></li>
+<li><p>Document improved system conditions</p></li>
+<li><p>Document improved energy performance</p></li>
+</ul>
+<p><strong>Method:</strong></p>
+<p>The comfort measurements taken in step 2 (Phase 2) should be repeated at the same
+locations under comparable conditions to determine impact on room conditions. The
+measured parameters, such as temperature and humidity, should be compared with
+the measurements from step 2.</p>
+<p>The measurements and methods adopted in step 4 should be used to determine post-
+CC  <sup>SM</sup> energy performance. Energy performance should be compared using appropriate
+occupancy and weather normalization. Typically, building energy consumption
+is regressed as a function of outside air temperature if annual projections are desired
+from short-term data. When hourly or daily models are used, separate models are
+generally developed for weekends and weekdays.</p>
+<p><strong>Special Considerations:</strong></p>
+<ul class="simple">
+<li><p>Savings analyses should follow accepted measurement and verification
+protocols such as the International Performance Measurement and Verification
+Protocol [IPMVP 2001] or an agreed upon alternate method</p></li>
+<li><p>Comfort conditions should conform to appropriate guidelines/design documents
+such as ASHRAE standards</p></li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<p>CC  <sup>SM</sup> Report, Part 5: Measurement and Verification. This report includes results
+of detailed measurements of room conditions and energy consumption after CC  <sup>SM</sup>
+activities, and retrofit recommendations. The room conditions and energy consumption
+should be compared to those during the pre-CC  <sup>SM</sup> period. The annual energy
+savings are projected from the available measured data.</p>
+<p><em>Step 6: Keep the Commissioning Continuous</em></p>
+<p><strong>Objectives:</strong></p>
+<ul class="simple">
+<li><p>Maintain improved comfort and energy performance</p></li>
+<li><p>Provide measured annual energy savings</p></li>
+</ul>
+<p><strong>Method:</strong></p>
+<p>The CC  <sup>SM</sup> engineers should review the system operation periodically to identify
+any operating problems and develop improved operation and control schedules as
+described below.</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>NOTE</strong></p>
+<p>The CC  <sup>SM</sup> engineer should provide follow-up phone consultation to the operating
+staff as needed, supplemented by site visits.</p>
+</div>
+<p>This will allow the operating staff to make wise decisions and maintain the savings and comfort in years to come. If long
+term measured data are available, the CC  <sup>SM</sup> engineers should review the energy
+data quarterly to evaluate the need for a site visit. If the building energy consumption
+has increased, the CC  <sup>SM</sup> engineers determine possible reasons and verify with
+facility operating staff. Once the problem(s) is identified, the CC  <sup>SM</sup> engineer should
+visit the site, develop measures to restore the building performance, and supervise
+the facility staff in implementing the measures. If the CC  <sup>SM</sup> engineer can remotely
+log into the EMCS system, the CC  <sup>SM</sup> engineer can check the existing system operation
+quarterly using the EMCS system. When a large number of operation and
+control measures are disabled, a site visit is necessary. If the CC  <sup>SM</sup> engineer cannot
+evaluate the facility using long-term measured energy data and EMCS system information,
+the CC  <sup>SM</sup> engineer should visit the facility semi-annually.</p>
+<p>One year after CC  <sup>SM</sup> implementation is complete, the CC  <sup>SM</sup> engineer should write
+a project follow-up report that documents the first-year savings, recommendations
+or changes resulting from any consultation or site visits provided, and any recommendations
+to further improve building operations.</p>
+<p><strong>Special Considerations:</strong></p>
+<ul class="simple">
+<li><p>Operating personnel often have a high turnover rate. It is important to
+train new staff members in the CC  <sup>SM</sup> process and make sure they are aware of
+the reasons the CC  <sup>SM</sup> measures were implemented</p></li>
+<li><p>Ongoing follow-up is essential if the savings are to be maintained at high levels
+over time</p></li>
+</ul>
+<p><strong>Deliverables:</strong>
+Special CC  <sup>SM</sup> Report, which documents measured first-year energy savings, results
+from first year follow-up, recommendations for ongoing staff training, and a
+schedule of follow-up CC  <sup>SM</sup> activities.</p>
+<p><strong>References</strong></p>
+<p>ASHRAE, 1996. ASHRAE Guideline 1-1996: The HVAC Commissioning Process, American
+Society of Heating, Refrigerating and Air-Conditioning Engineers, Atlanta, Ga.</p>
+<p>Claridge, D.E., Haberl, J., Liu, M., Houcek, J. and Athar, A., “Can You Achieve 150% of
+Predicted Retrofit Savings: Is It Time for Recommissioning?” ACEEE 1994 Summer Study
+on Energy Efficiency In Buildings Proceedings: Commissioning, Operation and Maintenance,
+Vol. 5, American Council for an Energy Efficient Economy, Washington, D.C., pp.
+73-87, 1994.</p>
+<p>Claridge, D.E., Culp, C.H., Liu, M., Deng, S., Turner, W.D. and Haberl, J.S., 2000. “Campus-
+Wide Continuous Commissioning  <sup>SM</sup> of University Buildings,” Proc. of ACEEE 2000
+Summer Study on Energy Efficiency in Buildings, Pacific Grove, Cal., Aug. 20-25, pp.
+3.101-3.112.</p>
+<p>Haasl, Tudi and Sharp, Terry, 1999. A Practical Guide for Commissioning Existing Buildings,
+Portland Energy Conservation, Inc. and Oak Ridge National Laboratory for U.S. DOE,
+ORNL/TM-1999/34, 69 pp. + Appendices.</p>
+<p>IPMVP, 2001. IPMVP Committee, International Performance Measurement &amp; Verification
+Protocol: Concepts and Options for Determining Energy and Water Savings, Vol. 1, U.S.
+Dept. of Energy, DOE/GO-102001-1187, 86 pp., January.</p>
+<p>Liu, M., Houcek, J., Athar, A., Reddy, A. and Claridge, D., 1994. “Identifying and Implementing
+Improved Operation and Maintenance Measures in Texas LoanSTAR Buildings,”
+ACEEE 1994 Summer Study on Energy Efficiency In Buildings Proceedings: Commissioning,
+Operation and Maintenance, Vol. 5, American Council for an Energy Efficient Economy,
+Washington, D.C., pp. 153-165, 1994.</p>
+<p>Liu, Mingsheng, Claridge, David E. and Turner, W.D., 1999. “Improving Building Energy
+System Performance by Continuous Commissioning  <sup>SM</sup>,” Energy Engineering, Vol. 96, No.
+5, pp. 46-57.</p>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>The terms Continuous CommissioningSM and CCSM have been service marked by the Texas Engineering Experiment Station
+Energy Systems Laboratory to ensure a consistent meaning for this terminology, as described in this guidebook.</p>
+</dd>
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id3">2</a></span></dt>
+<dd><p>This guidebook will speak of a single CC engineer and a single CC technician for simplicity. However, there may be more than
+one CC engineer and more than one CC technician on large projects.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第一章 连续调试介绍</a><ul>
+<li><a class="reference internal" href="#definition">1.1 Definition</a></li>
+<li><a class="reference internal" href="#process">1.2 Process</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="index.html"
+                        title="上一章">连续调试-改善建筑舒适性和能效</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="Chapter2.html"
+                        title="下一章">第二章  连续调试的优势</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Chapter1.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="Chapter2.html" title="第二章 连续调试的优势"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="连续调试-改善建筑舒适性和能效"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CCx_zh 0.0.1 文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, Building Energy Studio.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2 创建。
+    </div>
+  </body>
+</html>

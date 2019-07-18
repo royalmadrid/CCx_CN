@@ -1,0 +1,952 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>连续调试的案例 &#8212; CCx_zh 0.0.1 文档</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="第九章 实现建筑性能的优化" href="Chapter9.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="Chapter9.html" title="第九章 实现建筑性能的优化"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CCx_zh 0.0.1 文档</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>连续调试的案例<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>Two detailed CCSM projects are presented to demonstrate the process and the energy efficiency and comfort improvements. Although numerous case studies were presented throughout the guidelines, the complete presentations of the case studies provide opportunities for readers to understand and learn the detailed techniques. The first case study is the Zachry Engineering Center (ZEC) located on the Texas A&amp;M University Campus, College Station, Texas. The CCSM was conducted after a successful energy retrofit. The second example is the Brooke Army Medical Center (BAMC) located in San Antonio, Texas. The CCSM was conducted three years after completion of the building. This is considered as a CCSM project for a new building.</p>
+<div class="section" id="project-1-zachry-engineering-center-continuous-commissioningsm">
+<h2>Project 1: Zachry Engineering Center Continuous CommissioningSM<a class="headerlink" href="#project-1-zachry-engineering-center-continuous-commissioningsm" title="永久链接至标题">¶</a></h2>
+<p>Zachry Engineering Center (ZEC) is a 340,000 sq.ft. teaching and research building, located on the Texas A&amp;M University campus. The building has four floors and a heated-only parking garage in the basement. It was constructed in the early 1970s and has heavy concrete floors and insulated exterior walls made of pre-cast concrete and porcelain-plated steel panels. Approximately 12% of the exterior wall area is covered with single-pane, bronze-tinted glazing. The windows are recessed approximately four feet from the exterior walls, providing some shading.
+Approximately 3,100 sq.ft. of northeast-facing clerestory windows admit daylight into the core of the building.</p>
+<div class="figure align-center" id="id2" style="width: 600px">
+<img alt="_images/FigureA_1.png" src="_images/FigureA_1.png" />
+<p class="caption"><span class="caption-text">Figure A-1. The Zachry Engineering Center (ZEC) on the Texas A&amp;M Campus</span><a class="headerlink" href="#id2" title="永久链接至图片">¶</a></p>
+</div>
+<p>The ZEC includes offices, classrooms, laboratories and computer rooms and is open 24 hours per day, 365 days per year with heaviest occupancy during normal working hours between 8 a.m. and 6 p.m. on weekdays. Occupancy, electrical consumption and chilled/hot water consumption show marked weekday/weekend differences with peak weekend electrical consumption less than 10% above the nightly minimum. Weekday holiday occupancy is similar to weekend usage with intermediate usage on weekdays between semesters when class rooms are not in use, but laboratories and offices are occupied.</p>
+<p><strong>Original HVAC Systems</strong></p>
+<p>Twelve identical dual-duct constant volume systems with 40 hp. fans rated at 35,000 cfm and eight smaller air handlers (3 hp. average) supply air to the zones in the building. Supply and return air ducts are located around the perimeter of the building. These were operated with a constant outdoor air intake at a nominal value of 10% of design flow. Additional information about the building can be found in Katipamula and Claridge [1992a, 1992b], Bronson [1992], Bronson, et al. [1992], and Haberl, et al. [1993, 1995].</p>
+<p><strong>Monitoring of energy use</strong></p>
+<p>Approximately 50 channels of hourly data have been collected and recorded each week for the Zachry Engineering Center since May 1989. The sensors are scanned every 4 seconds and the values are integrated to give hourly totals or averages as appropriate. The important channels for savings measurement are those for air handler electricity consumption and whole-building heating and cooling energy use. Air handler electricity consumption is measured at the building’s motor control center (MCC) and represents all of the air-handling units and most of the heating, ventilating, and air-conditioning-related HVAC pumps in the building. Cooling and heating energy use are determined by a Btu meter which integrates the monitored fluid flow rate and temperature difference across the supply and return lines of the chilled and hot-water supply to the building. Most of the 50 channels of monitored information come from one air handler that is highly instrumented [Katipamula and Claridge 1992a].</p>
+<p><strong>HVAC System Retrofit</strong></p>
+<p>An energy audit of the Zachry Engineering Center was conducted in 1986 [TECCP, 1986]. This audit recommended a lighting retrofit to convert the four-lamp fixtures to three-lamp fixtures with reflectors, conversion of the large dual-duct constant air volume (DDCAV) systems to dual-duct variable-air volume (DDVAV) systems, and a connection to the campus energy management and control system (EMCS). The lighting retrofit was projected to save 975,600 kWh/yr of electricity, 2,500 MMBtu/yr of chilled water and increase hot water use by 832 MMBtu/yr with a payback of 4.4 years. The variable air volume (VAV) conversion, with controls improvements, was projected to save 1,952,776 kWh/yr on fan power, 115 MMBtu/yr of hot water and 265 MMBtu/yr of chilled water. The simple payback is 3.3 years. The university chose not to implement the lighting retrofit, but had variable speed drives installed on the twelve large AHUs, replaced the constant volume dual-duct terminal boxes with VAV dual-duct terminal boxes and connected the building to the campus automated control system.</p>
+<p>The audit proposed that the DDCV be converted to DDVAV systems before installing variable speed drives on 24 fans with associated static pressure sensors and controls. The existing constant volume terminal boxes which typically operated at static pressures above 0.5 in. H2O, were to be replaced by DDVAV boxes with independent controls on the hot decks and cold decks to provide constant minimum flow rates of 0.65 cfm/sq.ft. The new boxes and controls were to be tied to the campus EMCS. This was intended to permit shutdown of heating and cooling to non-critical areas such as classrooms during unoccupied hours by closing the dampers in the VAV boxes while the fans continued to supply heating and cooling to laboratory areas. The repair and upgrade of the existing EMCS in the building was intended to control time-of-day settings, DDVAV box load group override, hot and cold deck reset, optimal start-stop of a load group DDVAV box to ensure space comfort, and space temperature reset.</p>
+<p>After the building was retrofitted in 1991, fan power, chilled water consumption, and hot water consumption all dropped substantially. The fan power dropped from virtually constant consumption, approximately 350 kW before the retrofit as shown in Figure A-2, to consumption that varied from approximately 180 kW below 50°F to approximately 200 kW between 68°F and 86°F.</p>
+<div class="figure align-center" id="id3" style="width: 600px">
+<img alt="_images/FigureA_2.png" src="_images/FigureA_2.png" />
+<p class="caption"><span class="caption-text">Figure A-2. ZEC Daily MCC Consumption in 1990 Before the Retrofit, in 1994 After the Retrofit</span><a class="headerlink" href="#id3" title="永久链接至图片">¶</a></p>
+</div>
+<p>Chilled water use dropped substantially as well. Figure A-3 shows the daily chilled water consumption (MMBtu/day) in 1990 and 1994 as a function of daily average ambient temperature. Before the retrofit, the consumption depended almost linearly on the ambient temperature, increasing from approximately 95 MMBtu/day at 40°F to approximately 160 MMBtu/day at 86°F. The consumption following the retrofit was approximately the same at high temperatures, but dropped quite rapidly to about 85 MMBtu/day at 70°F and then dropped more slowly to about 43 MMBtu/day at 31°F. There is, of course, considerable scatter due to variation of ambient humidity conditions and certain operating practices. The general linear and piece-wise linear behavior of the chilled water consumption of the DDCV and DDVAV systems respectively, are consistent with the theoretically expected system behavior [Kissock et al. 1998].</p>
+<p>The measured daily hot water consumption values for 1990 and 1994 are shown in Figure A-4. Summer use of hot water was essentially eliminated and peak winter consumption cut in half.</p>
+<p>The annualized savings estimated in the audit and the savings determined from the measured consumption data, before and after the retrofit, are shown in Table A-1. The “measured” savings correspond to those for 1994, which was chosen as a typical year after the retrofit and before the Continuous CommissioningSM process was applied to the building. The fan power savings were determined by subtracting 1994 hourly consumption values from the average hourly fan power consumption before the retrofit. The fractional reduction in fan consumption is very close to that projected in the audit, but the consumption reduction is substantially smaller than expected since the audit engineers overestimated the original fan power.</p>
+<div class="figure align-center" id="id4" style="width: 600px">
+<img alt="_images/FigureA_3.png" src="_images/FigureA_3.png" />
+<p class="caption"><span class="caption-text">Figure A-3. ZEC Daily Chilled Water Consumption in 1990 Before the Retrofit and in 1994 After the Retrofit</span><a class="headerlink" href="#id4" title="永久链接至图片">¶</a></p>
+</div>
+<div class="figure align-center" id="id5" style="width: 600px">
+<img alt="_images/FigureA_4.png" src="_images/FigureA_4.png" />
+<p class="caption"><span class="caption-text">Figure A-4. ZEC Daily Hot Water Consumption in 1990 Before the Retrofit and in 1994 After the Retrofit</span><a class="headerlink" href="#id5" title="永久链接至图片">¶</a></p>
+</div>
+<p>The annual chilled water and hot water savings have been determined using a
+process that normalizes the savings from the retrofit and the subsequent CCSM process to the same weather year. The process calibrated a simulation program (AirModel) [Liu and Claridge 1998] to the measured consumption for one year prior to the retrofit (1989-90), one year after the retrofit (1994) and one year after the CCSM process was applied (1997). Each of the three calibrated simulations were then run using 1994 weather data and compared to determine the annualized savings.</p>
+<table class="docutils align-center" id="id6">
+<caption><span class="caption-text">Table A-1. Retrofit Savings for the Zachry Building</span><a class="headerlink" href="#id6" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 9%" />
+<col style="width: 30%" />
+<col style="width: 8%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>—</p></th>
+<th class="head"><p>–</p></th>
+<th class="head"><p>Savings</p></th>
+<th class="head"><p>–</p></th>
+<th class="head"><p>–</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>—</p></th>
+<th class="head"><p>Audit</p></th>
+<th class="head"><p>Estimated</p></th>
+<th class="head"><p>–</p></th>
+<th class="head"><p>Measured</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>Fan power</p></td>
+<td><p>40%</p></td>
+<td><p>1,952,764kWh/yr</p></td>
+<td><p>44%</p></td>
+<td><p>1,300,000kWh/yr</p></td>
+</tr>
+<tr class="row-even"><td><p>Chilled Water</p></td>
+<td><p>37%</p></td>
+<td><p>26,600MMBtu/yr</p></td>
+<td><p>23%</p></td>
+<td><p>10,500MMBtu/yr</p></td>
+</tr>
+<tr class="row-odd"><td><p>Heating Water</p></td>
+<td><p>49%</p></td>
+<td><p>11,500MMBtu/yr</p></td>
+<td><p>84%</p></td>
+<td><p>15,900MMBtu/yr</p></td>
+</tr>
+</tbody>
+</table>
+<p>This process resulted in the weather-normalized “measured” chilled water and heating water savings shown in Table A-1. Both the fractional chilled water savings and the reduction in chilled water consumption were substantially smaller than projected in the audit. The audit engineers again overestimated pre-retrofit consumption – in this case by more than 50%. On the other hand, both the fractional hot water savings and the consumption reduction were larger than expected.</p>
+<p><strong>Continuous CommissioningSM of the Zachry Engineering Center</strong></p>
+<p>The Continuous CommissioningSM process described earlier was applied after the retrofit of this building. In 1996 and early 1997, it was applied to the Zachry Engineering Center as part of the campus-wide implementation. Metering was specified and installed in most campus buildings as described elsewhere [Claridge et al. 2000]. Metering had been installed much earlier in the Zachry Engineering Center as part of the retrofit process. Therefore, no additional metering was installed.</p>
+<p>The CCSM facility survey found that the building control system set-up was far from optimum and found numerous other problems in the building as well. The basic control strategies found in the building are summarized in Table A-2. The ranges shown for constant parameters reflect different constant values for different individual air handlers.</p>
+<p>The control practices shown in the table are widely used in Texas, but none are optimal for this building. The campus controls engineer worked closely with the CCSM engineers during the survey. The items shown in Table A-2 could all be determined by examining the control system in the building. However, the facility survey also examined a great deal of the equipment throughout the building and found numerous cases of hot and chilled water valves that were leaking, control settings that caused continuous motion and unnecessary wear on valves, air ducts that had blown off of the terminal boxes, kinks in air ducts that led to rooms that could not be properly heated or cooled, etc.</p>
+<table class="docutils align-center" id="id7">
+<caption><span class="caption-text">Table A-2. Major Control Settings Found in the Zachry Engineering Center During the CCSM Survey</span><a class="headerlink" href="#id7" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Control Practice</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pressure in air ducts</p></td>
+<td><p>constant at 2.5-3.5 in.H2O</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cold air temperautre</p></td>
+<td><p>Constant at 50°F-55°F</p></td>
+</tr>
+<tr class="row-even"><td><p>Hot air temperature</p></td>
+<td><p>Constant at 110°F-120°F</p></td>
+</tr>
+<tr class="row-odd"><td><p>Air flow to rooms</p></td>
+<td><p>Variable - but inefficient</p></td>
+</tr>
+<tr class="row-even"><td><p>Heating pump control</p></td>
+<td><p>Operated continuously</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cooling pump control</p></td>
+<td><p>Variable speed with shut-off</p></td>
+</tr>
+</tbody>
+</table>
+<p>Following the survey, the building performance was analyzed and optimum control schedules were developed for the building in cooperation with the campus controls engineer. Major control parameters for the air handlers, pumps and terminal boxes were changed to values shown in the “Post-CCSM” column of Table A-3.</p>
+<p>In addition to optimizing the control settings for the building’s heating and cooling systems, numerous problems specific to individual rooms, ducts or terminal boxes were diagnosed and resolved. These included: damper motors that were disconnected, bent air ducts that could not supply enough air to properly control room temperature, leaking air dampers, and dampers that indicated open when only partly open.</p>
+<p>Problems of this sort had often led to occupant complaints that were partially resolved without fixing the real problem. For example, if a duct was constricted so that inadequate air flow reached a room, the pressure in the air handler might be increased to get additional flow into the room. “Fixes” like this typically improve room comfort, but lead to additional heating and cooling consumption in every other room on the same air handler. As has been discussed previously, an important part of the CCSM process is to find and fix problems that lead to energy inefficiency or to comfort problems. Too often “band-aids” are applied, and problems are not actually solved.</p>
+<table class="docutils align-center" id="id8">
+<caption><span class="caption-text">Table A-3. Major Control Settings in the Zachry Engineering Center Before and After Implementing CCSM</span><a class="headerlink" href="#id8" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Pre-CC Control Practice</p></th>
+<th class="head"><p>Post-CC Control Practice</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pressure in air ducts</p></td>
+<td><p>Constant at 2.5-3.5 in. H2O</p></td>
+<td><p>1.0-2.0 in.H2O as Toa increases</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cold air temperature</p></td>
+<td><p>Constant at 50°F-55°F</p></td>
+<td><p>60°F-55°F as Toa increases</p></td>
+</tr>
+<tr class="row-even"><td><p>Hot air temperature</p></td>
+<td><p>Constant at 110°F-120°F</p></td>
+<td><p>90°F-70°F as Toa increases</p></td>
+</tr>
+<tr class="row-odd"><td><p>Air flow to rooms</p></td>
+<td><p>Variable - but inefficient</p></td>
+<td><p>Optimized min/max flow and damper operation</p></td>
+</tr>
+<tr class="row-even"><td><p>Heating pump control</p></td>
+<td><p>Operated continuously</p></td>
+<td><p>Off when Toa&gt;55°F</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cooling pump control</p></td>
+<td><p>Variable speed with shut-off</p></td>
+<td><p>Pressure depends on flow</p></td>
+</tr>
+</tbody>
+</table>
+<p>Most of the control parameters were optimized to vary as a function of outside air temperature, Toa, as indicated.</p>
+<p>Implementing these measures resulted in significant additional savings beyond the original savings from the VAV retrofit and controls upgrade as shown in Figures A-5, A-6 and A-7. Figure A-5 shows the motor control center power consumption as a function of ambient temperature for 1990, 1994 and 1997. It is evident that the minimum fan power has been cut in half and there has been some reduction even at summer design conditions. Figure A-7 shows the hot water consumption for 1990, 1994 and 1997, again as a function of daily average temperature. The retrofit reduced the annual hot water (HW) consumption for heating to only 16% of the baseline, so there was little room for further reduction. However, it can be seen that the CCSM measures further reduced HW consumption, particularly at low temperatures. The largest savings from the CCSM measures are seen in the chilled water consumption as shown in Figure A-6. The largest fractional savings occur at low ambient temperatures, but the largest absolute savings occur at the highest ambient temperatures.
+The annualized consumption values for the baseline, post-retrofit and post-CCSM conditions are shown in Table A-4. The MCC consumption for 1997 was 1,209,918 kWh, 74% of the 1994 consumption and only 41% of the 1990 consumption. On an annual basis, the post-CCSM HW consumption normalized to 1994 weather was 1,940 MMBtu/yr, a reduction to only 10% of baseline consumption and a reduction of 34% from the 1994 consumption. The CCSM measures reduced the post-CCSM chilled water (CHW) consumption to 17,440 MMBtu, a reduction of 17,820 MMBtu/yr which is noticeably larger than the 13,930 MMBtu/yr savings produced by the retrofit. The CHW savings accounted for the largest portion of the CCSM savings in this cooling dominated climate.</p>
+<table class="docutils align-center" id="id9">
+<caption><span class="caption-text">Table A-4. Consumption at the Zachry Engineering Center Before and After Retrofit and After Implementing CCSM Measures</span><a class="headerlink" href="#id9" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 26%" />
+<col style="width: 17%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>–</p></th>
+<th class="head"><p>Baseline Consumption</p></th>
+<th class="head"><p>Post-retrofit</p></th>
+<th class="head"><p>Post-Retrofit %</p></th>
+<th class="head"><p>Post-CC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fan Power</p></td>
+<td><p>2,950,000 kWh</p></td>
+<td><p>1,640,000 kWh</p></td>
+<td><p>56%</p></td>
+<td><p>1,210,000 kWh</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chilled Water</p></td>
+<td><p>45,779 MMBtu</p></td>
+<td><p>35,258 MMBtu</p></td>
+<td><p>77%</p></td>
+<td><p>17,440 MMBtu</p></td>
+</tr>
+<tr class="row-even"><td><p>Heating Water</p></td>
+<td><p>18,766 MMBtu</p></td>
+<td><p>2,938 MMBtu</p></td>
+<td><p>16%</p></td>
+<td><p>1,943 MMBtu</p></td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-center" id="id10" style="width: 600px">
+<img alt="_images/FigureA_5.png" src="_images/FigureA_5.png" />
+<p class="caption"><span class="caption-text">Figure A-5. ZEC Daily Motor Control Center Electricity Consumption for 1990 Before the Retrofit, 1994 After the Retrofit and 1997 After CCSM</span><a class="headerlink" href="#id10" title="永久链接至图片">¶</a></p>
+</div>
+<div class="figure align-center" id="id11" style="width: 600px">
+<img alt="_images/FigureA_6.png" src="_images/FigureA_6.png" />
+<p class="caption"><span class="caption-text">Figure A-6. ZEC Daily Chilled Water Consumption for 1990 Before the Retrofit, 1994 After the Retrofit and 1997 After CCSM</span><a class="headerlink" href="#id11" title="永久链接至图片">¶</a></p>
+</div>
+<div class="figure align-center" id="id12" style="width: 600px">
+<img alt="_images/FigureA_7.png" src="_images/FigureA_7.png" />
+<p class="caption"><span class="caption-text">Figure A-7. ZEC Daily Hot Water Consumption for 1990 Before the Retrofit, 1994 After the Retrofit and 1997 After CCSM</span><a class="headerlink" href="#id12" title="永久链接至图片">¶</a></p>
+</div>
+</div>
+<div class="section" id="project-2-brooke-army-medical-center-continuous-commissioningsm">
+<h2>Project 2: Brooke Army Medical Center Continuous CommissioningSM<a class="headerlink" href="#project-2-brooke-army-medical-center-continuous-commissioningsm" title="永久链接至标题">¶</a></h2>
+<p>The Brooke Army Medical Center (BAMC) was a relatively new facility when the Energy Systems Laboratory (ESL) was hired to commission it. The facility was operated for the Army by a third-party company, and was operated in accordance with the original design intent. As has been discussed throughout this guidebook, the CCSM process looks at the facility as it is being operated and attempts to optimize the energy-using systems. This case study illustrates a wide range of CCSM opportunities.</p>
+<div class="figure align-center" id="id13" style="width: 600px">
+<img alt="_images/FigureA_8.png" src="_images/FigureA_8.png" />
+<p class="caption"><span class="caption-text">Figure A-8. The Brooke Army Medical Center (BAMC) in San Antonio, Texas</span><a class="headerlink" href="#id13" title="永久链接至图片">¶</a></p>
+</div>
+<p><strong>Building and HVAC Systems</strong></p>
+<p>The Brooke Army Medical Complex is a large, multi-functional medical facility. It consists of a medical center (main hospital), a research building (R) and a central energy plant (CEP). The medical center consists of four interconnected buildings: the C building (4 stories), M building (6 stories), A building (6 stories) and B building (8 stories) with a total floor area of 1,349,707 sq.ft. The research building is a three-story building with a floor area of 118,886 sq.ft. Figure A-9 illustrates the layout of typical floors in the complex.</p>
+<p>The complex includes outpatient clinics, a nuclear medicine area, pharmacy areas, ICUs, CCUs, surgical areas, inpatient beds, emergency rooms, diagnostic areas, research labs, offices, animal holding areas, a cafeteria, computer rooms, training classrooms and an auditorium.</p>
+<p>The complex is equipped with a central energy plant that has four 1,200-ton water-cooled electric chillers. Four primary pumps (75 hp. each) are used to pump water through the chillers. Two secondary pumps (200 hp. each), equipped with VFDs, supply chilled water from the plant to the building entrances. Fourteen chilled water risers equipped with 28 pumps totaling 557 hp. are used to pump chilled water to all of the AHUs and small FCUs. All of the chilled water riser pumps are equipped with VFDs.</p>
+<p>This plant includes four natural gas-fired steam boilers. The maximum output for each boiler is 20 MMBtu/hr. Steam is supplied to each building where heating water is generated. The steam pressure set point for the boilers, prior to CCSM, was 125 psi.</p>
+<p>Ninety major AHUs with a total of 2,570 hp. serve the complex. VFDs are installed in 65 AHUs. The others are constant volume systems.
+The complex contains 2,700 terminal boxes, of which 27% are dual duct variable volume (DDVAV) boxes, 71% are dual duct constant volume (DDCV) boxes, and 2% are single duct variable volume (SDVAV) boxes. Neither the warehouse nor the auditorium has terminal boxes.</p>
+<p>The HVAC systems (chillers, boilers, AHUs, pumps, terminal boxes and room conditions) are controlled by a York DDC control system. Individual controller-field panels are used for the AHUs and water loops located in the mechanical rooms, which are also accessed by the central control system through an interface-ProComm plus and Facility Manager. The program and parameters can be changed by the central computers or by the field panels.</p>
+<p><strong>Energy Baseline and Metering</strong></p>
+<p>Once the contract was signed for the commissioning, metering was installed on the whole facility and the central plant to monitor whole facility energy consumption. Because the metering was not installed in time to obtain the pre-CCSM baseline,
+monthly utility bills were used for the pre-CCSM energy consumption baseline. The hourly data were used to determine the post-CCSM consumption. Some short-term loggers were also installed.</p>
+<p><strong>Building Conditions Before CCSM</strong></p>
+<p>A survey of every room was conducted to determine its function and operating hours as part of the effort to document details of system operation prior to developing and implementing CCSM measures. The EMCS was used to implement numerous control measures that increased system efficiency, including the following:</p>
+<ul class="simple">
+<li><p>Hot deck reset control for the AHUs</p></li>
+<li><p>Cold deck reset during unoccupied periods for some units</p></li>
+<li><p>Static pressure reset between high and low limits for VAV units</p></li>
+<li><p>Hot water supply temperature control with reset schedule</p></li>
+<li><p>VFD control of chilled water pumps with ΔP set point (no reset schedule)</p></li>
+<li><p>Box level control and monitoring</p></li>
+</ul>
+<p>The facility was well maintained by the facility operator in accordance with the original design intent and the complex exhibited above average energy efficiency for a large hospital.</p>
+<p><strong>Commissioning Activities</strong></p>
+<p>Because the case study hospital is such a multi-functional complex, the commissioning activities were performed at the terminal box level, AHU level, loop level and central plant level. Several different types of improved operating measures and energy solutions were implemented in different HVAC systems. Each measure will be discussed, starting with the air handling units.</p>
+<p><strong>Optimizing AHU Operation</strong></p>
+<p>A total of 54 VAV AHUs serve the clinic areas, diagnostic areas, pharmacy, research laboratory, food services areas, offices, lobby areas, maintenance areas and storage rooms. The cold deck (CD) temperature set points were operated with a constant set point, ranging from 55˚ to 57˚F, and were occasionally adjusted by the operator during occupied periods. The hot deck (HD) temperature set points were modulated between a low limit and a high limit, according to the box requirements. If there is no call for heat from the box, the hot deck is maintained at the low limit. If there is a call for heat from a box, the hot deck will be increased up to the high limit until there is no longer a call for heating.</p>
+<p>The actual measured results from the site measurements and short-term data loggers showed that HD temperatures ranged from 75˚F to 93˚F during the hot summer. The static pressure set points were modulated between the low and high limits according to the box conditions. The supply fan ranged from 55 Hz to 60 Hz for different AHUs during the site visit period. Table A-5 shows the control schedules before commissioning.</p>
+<table class="docutils align-center" id="id14">
+<caption><span class="caption-text">Table A-5. Typical Set Points for the HD and Static Pressure Before Commissioning</span><a class="headerlink" href="#id14" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 49%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Limit</p></th>
+<th class="head"><p>HD Set Point</p></th>
+<th class="head"><p>Static Pressure Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>High limit</p></td>
+<td><p>110˚F if Toa&lt;30˚F, 90˚F if Toa&gt;70˚</p></td>
+<td><p>1.8” H20 (fixed value)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Low limit</p></td>
+<td><p>90˚F if Toa&lt;30˚F, 70˚F if Toa&gt;70˚F</p></td>
+<td><p>1.4” H20 (fixed value)</p></td>
+</tr>
+</tbody>
+</table>
+<p>The CCSM investigation found that the high hot deck temperature caused excessive heating and cooling consumption and hot calls during the summer. The cold deck set points, with a reset schedule, can better satisfy the building load under different weather conditions and reduce simultaneous cooling and heating consumption during winter conditions. Measurements of the static pressures indicated the static pressures could be much lower than the original values. The higher static pressures caused more fan electricity consumption and excess cold and hot air to the building. Based on measurements and calculations, the improved commissioning control schedules are presented in Tables A-6, A-7, and A-8.</p>
+<table class="docutils align-center" id="id15">
+<caption><span class="caption-text">Table A-6. Post-CCSM HD Temperature Reset Schedules for DDVAV AHUs</span><a class="headerlink" href="#id15" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Limit</p></th>
+<th class="head"><p>HD Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>High limit</p></td>
+<td><p>94-98˚F if Toa&lt;30˚F, 75˚F if Toa&gt;78˚F</p></td>
+</tr>
+<tr class="row-odd"><td><p>Low limit</p></td>
+<td><p>74-76˚F if Toa&lt;30˚F, 70˚F if Toa&gt;78˚F</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-center" id="id16">
+<caption><span class="caption-text">Table A-7. Post-CCSM CD Temperature Reset Schedules for DDVAV AHUs</span><a class="headerlink" href="#id16" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 69%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>HD Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Occupied period</p></td>
+<td><p>94-98˚F if Toa&lt;30˚F, 75˚F if Toa&gt;78˚F</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unoccupied period</p></td>
+<td><p>74-76˚F if Toa&lt;30˚F, 70˚F if Toa&gt;78˚F</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-center" id="id17">
+<caption><span class="caption-text">Table A-8. Post-CCSM Static Pressure Set Point Limits for DDVAV AHUs</span><a class="headerlink" href="#id17" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Limit</p></th>
+<th class="head"><p>C building</p></th>
+<th class="head"><p>M building</p></th>
+<th class="head"><p>A building</p></th>
+<th class="head"><p>B building</p></th>
+<th class="head"><p>R building</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>–</p></th>
+<th class="head"><p>Inch H20</p></th>
+<th class="head"><p>Inch H20</p></th>
+<th class="head"><p>Inch H20</p></th>
+<th class="head"><p>Inch H20</p></th>
+<th class="head"><p>Inch H20</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>High limit</p></td>
+<td><p>0.9-1.3</p></td>
+<td><p>1.0-1.8</p></td>
+<td><p>1.0-1.8</p></td>
+<td><p>1.0-1.8</p></td>
+<td><p>1.5-1.8</p></td>
+</tr>
+<tr class="row-even"><td><p>Low limit</p></td>
+<td><p>0.5</p></td>
+<td><p>0.5-0.7</p></td>
+<td><p>0.5-0.7</p></td>
+<td><p>0.5</p></td>
+<td><p>0.5</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note: The static pressure set point limits are determined based on the duct condition, box condition, damper condition, and special resistance factors such as HEPA filters.</p>
+<p>Prior to CCSM, the preheat set points were 2-5 degrees below the cold deck set points, causing simultaneous heating and cooling if the temperature sensors had an error. The new preheat set points after CCSM are 40˚F for all the AHUs.</p>
+<p>Before commissioning, 12 AHUs in the C building had 2 hours of shutdown at night. The control philosophy allowed the indoor temperature to swing from 65˚F to 85˚F. In order to reduce the swing in the indoor air conditions, the AHUs are now run 24 hours a day after the commissioning. The continuous (24 hours) operation provides a constant room condition. The actual energy consumption did not rise significantly since the envelope loads were small for this section of building.</p>
+<p>As one of the commissioning measures during unoccupied periods, in order to reduce the outside air intake after hours, the relief air dampers were closed for all the units. To maintain the building pressure, some of the exhaust fans were shut down as well.</p>
+<p>The optimized operation schedules were tested and implemented in all 54 VAV AHUs. The commissioning team also performed troubleshooting and fine-tuning on the AHUs and associated terminal boxes. The indoor conditions were improved and the fan power consumption, as well as thermal energy consumption, was reduced significantly.</p>
+<p>A total of nine constant-volume AHUs serve the diagnostic areas, pharmacy, offices, classroom areas and health promotion center. Seven constant-volume AHUs serve inpatient areas, which have special requirements such as indoor temperatures for burn patients.</p>
+<p>The cold deck temperature set point was operated with a constant set point, ranging from 55˚F to 57˚F, and was occasionally adjusted by the operator during occupied periods. The hot deck (HD) temperature set points were modulated between the low limit and the high limit according to the terminal box requirements. The limits were almost the same for the AHUs and can be seen in Table A-9.</p>
+<table class="docutils align-center" id="id18">
+<caption><span class="caption-text">Table A-9. Typical Set Points for HD Before Commissioning</span><a class="headerlink" href="#id18" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Limit</p></th>
+<th class="head"><p>HD Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>High limit</p></td>
+<td><p>110˚F if Toa&lt;30˚F, 90˚F if Toa&gt;70˚F</p></td>
+</tr>
+<tr class="row-odd"><td><p>Low limit</p></td>
+<td><p>90˚F if Toa&lt;30˚F, 70˚F if Toa&gt;70˚F</p></td>
+</tr>
+</tbody>
+</table>
+<p>The outside air intakes were constant day and night. All dampers stayed in the same position day and night. The relief and return air dampers were 100% open for all units. The post-commissioning control schedules are presented in Tables A-10 and A-11.</p>
+<table class="docutils align-center" id="id19">
+<caption><span class="caption-text">Table A-10. Post-CCSM HD Temperature Reset Schedules for DDCV AHUs</span><a class="headerlink" href="#id19" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Limit</p></th>
+<th class="head"><p>HD Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>High limit</p></td>
+<td><p>94-98˚F if Toa&lt;30˚F, 75˚F if Toa&gt;78˚F</p></td>
+</tr>
+<tr class="row-odd"><td><p>Low limit</p></td>
+<td><p>74˚F if Toa&lt;30˚F, 70˚F if Toa&gt;78˚F</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-center" id="id20">
+<caption><span class="caption-text">Table A-11. Post-CCSM CD Temperature Reset Schedules for DDCV AHUs</span><a class="headerlink" href="#id20" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Limit</p></th>
+<th class="head"><p>CD Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>High limit</p></td>
+<td><p>60˚F if Toa&lt;50˚F, 56˚F if Toa&gt;80˚F</p></td>
+</tr>
+<tr class="row-odd"><td><p>Low limit</p></td>
+<td><p>Keep existing unoccupied schedule</p>
+<p>80˚F if Tret&lt;55˚F, 55˚F if Tret&gt;80˚F</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The new preheat set point after commissioning was 40˚F for all the AHUs, and the relief air dampers were closed for all the units during unoccupied periods. Some of the exhaust fans were shut down to maintain positive building pressure.</p>
+<p>Due to special inpatient requirements, there was no modification for seven AHUs.</p>
+<p>Two unique and large VAV multi-zone AHUs serve large storage areas and newly renovated office areas in the C building. The operation schedules before the commissioning can be seen in Table A-12. The outside air and relief dampers were always open, and the preheat set point was 2-5˚F lower than the CD temperature set points. There are no terminal boxes for the system, only supply ducts.</p>
+<table class="docutils align-center" id="id21">
+<caption><span class="caption-text">Table A-12. Detailed Schedules for HD, CD and Static Pressure Before Commissioning</span><a class="headerlink" href="#id21" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 45%" />
+<col style="width: 19%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Item</p></th>
+<th class="head"><p>HD Set Point</p></th>
+<th class="head"><p>CD Set Point</p></th>
+<th class="head"><p>Static Pressure Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Occupied</p></td>
+<td><p>90˚F to 100˚F if Toa&lt;30˚F,</p>
+<p>70˚F if Toa&gt;70˚F</p>
+</td>
+<td><p>56 to 57˚F</p></td>
+<td><p>0.9” H2O</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unoccupied</p></td>
+<td><p>90˚F to 100˚F if Toa&lt;30˚F,</p>
+<p>70˚F if Toa&gt;70˚F</p>
+</td>
+<td><p>80˚F if Tret&lt;55˚F,</p>
+<p>57˚F if Tret&gt;80˚F</p>
+</td>
+<td><p>0.9” H2O</p></td>
+</tr>
+</tbody>
+</table>
+<p>Through field measurements and analysis, the following opportunities to improve the operation of the two VAV multi-zone AHUs were identified:</p>
+<ul class="simple">
+<li><p>Balance zone air and determine new static pressure set points for VFDs</p></li>
+<li><p>Optimize the cold deck temperature set points with reset schedules</p></li>
+<li><p>Optimize the hot deck temperature reset schedules</p></li>
+<li><p>Control outside air intake, relief damper during unoccupied periods</p></li>
+<li><p>Optimize time schedule for fans to improve room conditions</p></li>
+<li><p>Improve the preheat temperature set point to avoid unnecessary preheating</p></li>
+</ul>
+<p>The new operation schedules are presented in Tables A-13, A-14, and A-15.</p>
+<p><strong>Optimization of Terminal Box Operation</strong></p>
+<p>A total of 2,700 terminal boxes supplied conditioned air to the rooms. 27% are DDVAV boxes, 71% are DDCV boxes, and 2% are SDVAV boxes. The original control logic of the DDVAV boxes was the same as the constant volume terminal box operation, but different cfm settings were used at minimum and maximum conditions. The minimum air flow cfm settings for the VAV boxes were the same both day and night and ranged from 30% to 90% with an average of 60% of maximum air flow for the box. This schedule consumes excess heating and cooling air under normal room load conditions. Also, the heating capacity was limited for some boxes due to the existing box design setting. In some cases, the boxes supplied a limited amount of hot air, even in the full heating mode, even though the hot duct of the boxes could allow more flow through. To meet the minimum air flow requirements, the boxes had to use more cold air than was necessary.</p>
+<table class="docutils align-center" id="id22">
+<caption><span class="caption-text">Table A-13. Post-CCSM HD Reset Schedules</span><a class="headerlink" href="#id22" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>HD Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Occupied periods (5:00 to 18:00)</p></td>
+<td><p>76˚F if Min(damper%z1;damper%z2)&lt;10%,</p>
+<p>70˚F if Min(damper%z1;damper%2)&gt;50%</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Unoccupied periods (18:00 to 5:00)</p></td>
+<td><p>72˚F if Min(damper%z1;damper%z2)&lt;10%,</p>
+<p>68˚F if Min(damper%z1;damper%z2)&gt;50%</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Note: damper%Z1:zone 1 damper control output. 0% means full open for the hot damper and full closed for the cold damper; 100% means full open for cold damper and full closed for hot damper.</p>
+<table class="docutils align-center" id="id23">
+<caption><span class="caption-text">Table A-14. Post-CCSM CD Set Points</span><a class="headerlink" href="#id23" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>HD Set Point</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Occupied periods (5:00 to 18:00)</p></td>
+<td><p>57˚F if Max(damper%z1;damper%z2)&gt;90%,</p>
+<p>60˚F if Max(damper%z1;damper%z2)&lt;50%</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Unoccupied periods (18:00 to 5:00)</p></td>
+<td><p>Keep existing reset schedule</p>
+<p>80˚F if Tret&lt;55˚F, 55˚F if Tret&gt;80˚F</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Note: damper%z1:zone 1 damper control output. 0% means full open for the hot damper and full closed for the cold damper; 100% means full open for cold damper and full closed for hot damper</p>
+<table class="docutils align-center" id="id24">
+<caption><span class="caption-text">Table A-15. Post-CCSM State Pressure Set Points</span><a class="headerlink" href="#id24" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 72%" />
+<col style="width: 13%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>LC11</p></th>
+<th class="head"><p>LC12</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Occupied periods (5:00 to 18:00)</p></td>
+<td><p>0.8</p></td>
+<td><p>0.9</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unoccupied periods (18:00 to 5:00)</p></td>
+<td><p>0.5</p></td>
+<td><p>0.5</p></td>
+</tr>
+</tbody>
+</table>
+<p>The preheat set point changed to 40°F for the two units. The OA and relief dampers will be closed during unoccupied periods.</p>
+<p>New control logic was developed that made the box run on a VAV operation schedule. As a result, simultaneous cooling and heating were reduced significantly during normal load conditions for the box. The hot air capacity was increased by an average of 30% in the full heating mode. The minimum supply air flow requirement was also satisfied.</p>
+<p><strong>Unoccupied Period Setback for the VAV Terminal Boxes</strong></p>
+<p>The setback control is as follows:</p>
+<ul class="simple">
+<li><p>Keep the room temperature set points the same as occupied periods (BAMC
+request)</p></li>
+<li><p>Reduce total flow minimum value to 0. The box will provide enough air when
+the load increases.</p></li>
+</ul>
+<p><strong>Unoccupied Period Setback for the CV Terminal Boxes</strong></p>
+<p>The setback control is as follows:</p>
+<ul class="simple">
+<li><p>Keep the room temperature set points the same as occupied periods based on
+existing set points (BAMC request)</p></li>
+<li><p>Reduce total flow to a percentage of the design flow. The percentage is
+determined based on the building pressure analysis. Generally, the percentage is
+from 30% to 70% for different AHUs.</p></li>
+</ul>
+<p><strong>Troubleshooting</strong></p>
+<p>During the commissioning period, it was found that some terminal boxes could not provide the required air flow before or after the control program modification. The major reason was higher flow resistance from the flexible and kinked ducts to the terminal boxes. The CCSM engineers performed detailed checks for every box on the computer first, then conducted field measurements for all the troublesome boxes. Specific problems were identified for approximately 200 boxes. The operation and maintenance personnel fixed the problems following the recommendations.</p>
+<p><strong>Loop Commissioning</strong></p>
+<p>Fourteen chilled water risers equipped with 28 pumps provided chilled water to the entire complex. One pump per riser was needed; the second pump was standby. During the commissioning audit phase, the following were observed:</p>
+<ul class="simple">
+<li><p>All the riser pumps were equipped with VFDs and were running from 41 Hz to
+60 Hz</p></li>
+<li><p>All the manual balancing valves on the risers were balanced 30% to 60% open</p></li>
+<li><p>The ΔP sensor for each riser was located 10 to 20 feet from the far-end coil of
+the AHU on the top floor</p></li>
+<li><p>Differential pressure set points for each riser ranged from 13 psi to 26 psi</p></li>
+<li><p>The return loop has no control valve</p></li>
+<li><p>Although most of the cold deck temperatures were holding well, the cooling
+coils on 13 AHUs were 100% open but could not maintain cold deck
+temperature set points</p></li>
+</ul>
+<p><strong>Commissioning measures</strong></p>
+<p>Since the risers were equipped with VFDs, traditional manual balancing techniques were not appropriate. All the risers were rebalanced initially by opening all of the manual balancing valves. The actual pressure requirements for each riser were
+measured. It was determined that the ΔP for each riser could be reduced significantly.</p>
+<p>Table A-16 summarizes the riser conditions before and after the commissioning and the horsepower savings for each riser pump.</p>
+<p>After balancing, there was better cold deck temperature control of the AHUs, as well as a significant reduction in pumping requirements.</p>
+<table class="docutils align-center" id="id25">
+<caption><span class="caption-text">Table A-16. Summary of Chilled Water System Condition Before And After Reset And New Set Points</span><a class="headerlink" href="#id25" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 17%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Riser</p></th>
+<th class="head" colspan="4"><p>Before Reset</p></th>
+<th class="head" colspan="4"><p>After DP Reset</p></th>
+<th class="head"><p>% of rated HP</p></th>
+<th class="head"><p>Rated HP</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Name</p></th>
+<th class="head"><p>DP set</p>
+<p>point</p>
+</th>
+<th class="head"><p>Time</p></th>
+<th class="head"><p>DP</p>
+<p>meas.</p>
+</th>
+<th class="head"><p>Pump</p>
+<p>Hz</p>
+</th>
+<th class="head"><p>DP set</p>
+<p>point</p>
+</th>
+<th class="head"><p>Time</p></th>
+<th class="head"><p>DP</p>
+<p>meas.</p>
+</th>
+<th class="head"><p>Pump</p>
+<p>Hz</p>
+</th>
+<th class="head"><p>Savings</p></th>
+<th class="head"><p>—</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>C11/C12</p></td>
+<td><p>13</p></td>
+<td><p>14:00</p></td>
+<td><p>13.1</p></td>
+<td><p>41.3</p></td>
+<td><p>6</p></td>
+<td><p>10:20</p></td>
+<td><p>6.2</p></td>
+<td><p>27.7</p></td>
+<td><p>23%</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p>C21/C22</p></td>
+<td><p>16</p></td>
+<td><p>14:20</p></td>
+<td><p>16.1</p></td>
+<td><p>49.1</p></td>
+<td><p>7</p></td>
+<td><p>15:50</p></td>
+<td><p>7</p></td>
+<td><p>33.8</p></td>
+<td><p>37%</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>M1</p></td>
+<td><p>15.2</p></td>
+<td><p>11:00</p></td>
+<td><p>15</p></td>
+<td><p>45</p></td>
+<td><p>7</p></td>
+<td><p>13:40</p></td>
+<td><p>7</p></td>
+<td><p>29.1</p></td>
+<td><p>31%</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p>M2</p></td>
+<td><p>25</p></td>
+<td><p>11:10</p></td>
+<td><p>25</p></td>
+<td><p>60</p></td>
+<td><p>8</p></td>
+<td><p>13:45</p></td>
+<td><p>8</p></td>
+<td><p>37</p></td>
+<td><p>77%</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-odd"><td><p>M3</p></td>
+<td><p>25</p></td>
+<td><p>15:00</p></td>
+<td><p>24.5</p></td>
+<td><p>60</p></td>
+<td><p>8</p></td>
+<td><p>16:00</p></td>
+<td><p>7.8</p></td>
+<td><p>35.4</p></td>
+<td><p>79%</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-even"><td><p>M4</p></td>
+<td><p>26</p></td>
+<td><p>15:10</p></td>
+<td><p>24</p></td>
+<td><p>59.8</p></td>
+<td><p>8</p></td>
+<td><p>16:06</p></td>
+<td><p>8</p></td>
+<td><p>40</p></td>
+<td><p>69%</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-odd"><td><p>A1</p></td>
+<td><p>20</p></td>
+<td><p>9:00</p></td>
+<td><p>20.5</p></td>
+<td><p>50.5</p></td>
+<td><p>8</p></td>
+<td><p>10:50</p></td>
+<td><p>8</p></td>
+<td><p>33</p></td>
+<td><p>43%</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-even"><td><p>A2</p></td>
+<td><p>16</p></td>
+<td><p>13:15</p></td>
+<td><p>16.2</p></td>
+<td><p>40.3</p></td>
+<td><p>13</p></td>
+<td><p>16:19</p></td>
+<td><p>13.1</p></td>
+<td><p>36.7</p></td>
+<td><p>7%</p></td>
+<td><p>40</p></td>
+</tr>
+<tr class="row-odd"><td><p>A3</p></td>
+<td><p>15.2</p></td>
+<td><p>11:20</p></td>
+<td><p>15</p></td>
+<td><p>43.8</p></td>
+<td><p>8</p></td>
+<td><p>15:00</p></td>
+<td><p>8</p></td>
+<td><p>32</p></td>
+<td><p>24%</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-even"><td><p>A4</p></td>
+<td><p>16.2</p></td>
+<td><p>13:50</p></td>
+<td><p>16.3</p></td>
+<td><p>53</p></td>
+<td><p>12</p></td>
+<td><p>13:16</p></td>
+<td><p>12</p></td>
+<td><p>45.3</p></td>
+<td><p>26%</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>B1</p></td>
+<td><p>14</p></td>
+<td><p>14:00</p></td>
+<td><p>13.6</p></td>
+<td><p>50.7</p></td>
+<td><p>8</p></td>
+<td><p>14:30</p></td>
+<td><p>8</p></td>
+<td><p>42.7</p></td>
+<td><p>24%</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p>B2</p></td>
+<td><p>17</p></td>
+<td><p>14:00</p></td>
+<td><p>17</p></td>
+<td><p>55.7</p></td>
+<td><p>9</p></td>
+<td><p>13:42</p></td>
+<td><p>8.7</p></td>
+<td><p>42.2</p></td>
+<td><p>45%</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>R1/R2</p></td>
+<td><p>14</p></td>
+<td><p>11:40</p></td>
+<td><p>14</p></td>
+<td><p>54.7</p></td>
+<td><p>8</p></td>
+<td><p>15:50</p></td>
+<td><p>8</p></td>
+<td><p>44.1</p></td>
+<td><p>36%</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p>R3/R4</p></td>
+<td><p>16</p></td>
+<td><p>11:45</p></td>
+<td><p>15</p></td>
+<td><p>50.4</p></td>
+<td><p>8</p></td>
+<td><p>15:54</p></td>
+<td><p>7.1</p></td>
+<td><p>36</p></td>
+<td><p>38%</p></td>
+<td><p>25</p></td>
+</tr>
+<tr class="row-odd"><td colspan="9"><p><strong>Ave/Tot</strong></p></td>
+<td><p>40%</p></td>
+<td><p>270</p></td>
+</tr>
+<tr class="row-even"><td colspan="9"><p><strong>Total    Savings</strong></p></td>
+<td colspan="2"><p>108hp (80kw)</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Central Plant and Distribution Loops</strong></p>
+<p><strong>Boiler steam pressure and boiler operation</strong></p>
+<p>The original steam pressure was set to 125 psi. However, the actual required pressure for BAMC was less than 125 psi. The recommendation was made to reduce the boiler pressure to 100 psi, thus reducing losses and gas consumption. The operations staff was not comfortable with 100 psi, but agreed to drop the pressure to 110 psi. The boiler efficiency increased after implementing the new steam pressure set point. Also, the practice at BAMC was to run two boilers year round. As part of commissioning, one boiler was shut down during the summer and swing seasons.</p>
+<p><strong>Chilled water loop</strong></p>
+<p>Before the commissioning, the blending valve separating the primary and secondary loops at the plant was 100% open. The primary and secondary pumps were both running. The manual valves were partially open for the secondary loop, although the secondary loop pumps were equipped with VFDs. After the commissioning audit and investigations, the following was implemented.</p>
+<ul class="simple">
+<li><p>Open the manual valves for the secondary loop</p></li>
+<li><p>Close the blending stations</p></li>
+<li><p>Shut down the secondary loop pumps</p></li>
+</ul>
+<p>As a result, the primary loop pumps provided required chilled water flow and pressure to the building entrance for most of the year, and the secondary pumps stay offline for the majority of the time. The operator drops the online chiller numbers according to the load conditions and the minimum chilled water flow can be maintained to the chillers. At the same time, the chiller efficiency is also increased.</p>
+<p><strong>Results</strong></p>
+<p>Major commissioning activities were completed in April 1999 and the Energy Systems Laboratory continued to monitor BAMC through June 2000. We worked with the operations staff to assist with troubleshooting and continue to fine-tune the operation. The commissioning started in October 1998 and the 1997-1998 utility bills were used to establish the energy baseline.</p>
+<div class="figure align-center" id="id26" style="width: 600px">
+<img alt="_images/FigureA_10.png" src="_images/FigureA_10.png" />
+<p class="caption"><span class="caption-text">Figure A-10. Accumulated CCSM Energy Cost Savings in Brooke Army Hospital</span><a class="headerlink" href="#id26" title="永久链接至图片">¶</a></p>
+</div>
+<p>Figure A-10 presents the accumulated energy cost savings. Since the commissioning process extended over a seven-month period, savings were calculated to be approximately $105,000 during the implementation phase. For the 14-month period (May 1999-June 2000) savings were measured to be nearly $410,000, or approximately $30,000/month, based on 1997-1998 energy prices. Total savings from the commissioning process (October 1998 to June 2000) were approximately $515,000. The ESL cost to meter, monitor, commission and provide a year’s follow-up services was less than $350,000. This cost does not include time for the facilities operations staff who repaired kinked flex ducts, replaced failed sensors, implemented some of the controls and subroutines, and participated in the CCSM process. More technical information regarding this case study can be found in the references.</p>
+<p><strong>Acknowledgements</strong></p>
+<p>We would like to acknowledge the assistance and cooperation of Chuck Cameron, lead operator, and Ben Keeble, project manager, of Johnson Controls, Inc.; and Roy Hirchak, chief, BAMC Facility Management, for their contributions to the BAMC Continuous CommissioningSM project.</p>
+<p><strong>References</strong></p>
+<p>Bronson, D., 1992. “Calibrated computer simulations for the analysis of retrofit energy savings. Master’s Thesis. Energy Systems Laboratory Report Nos. ESL-TH-92/04-02 and ESL-TH-92/04-01. College Station: Texas A&amp;M University System.</p>
+<p>Bronson, D., S. Hinchey, J.S. Haberl and D. O’Neal, 1992. “A Procedure for calibrating the DOE-2 simulation program to non-weather-dependent loads.” ASHRAE Transactions Vol. 98, Part I, pp. 636-652.</p>
+<p>Claridge, D.E., M. Liu, Y. Zhu, M. Abbas, A. Athar and J.S. Haberl, 1996. “Implementation of Continuous Commissioning in the Texas LoanSTAR Program: Can You Achieve 150% of Estimated Retrofit Savings Revisited,” Proc. ACEEE 1996 Summer Study on Energy Efficiency In Buildings,American Council for an Energy Efficient Economy, Washington, D.C., pp. 4.59-4.67.</p>
+<p>Claridge, D.E., C.H. Culp, M. Liu, S. Deng, W.D. Turner and J.S. Haberl, 2002. “Campus-Wide Continuous CommissioningSM of University Buildings,” Proc. of ACEEE 2000 Summer Study on Energy Efficiency in Buildings, Pacific Grove, CA, Aug. 20-25, pp. 3.101-3.112.</p>
+<p>Claridge, D.E. and M. Liu, 2002. “HVAC System Commissioning,” in Handbook of Heating, Ventilation, and Air Conditioning, Jan F. Kreider, ed., CRC Press, Boca Raton, Fla., pp. 7-1 through 7-25.</p>
+<p>Haberl, J.S., D. Bronson, S. Hinchey, and D. O’Neal, 1993. “Graphical Tools to Help Calibrate the DOE-2 Simulation Program to Non-Weather-Dependent Measured Loads. ASHRAE Journal, Vol. 35, Part I, pp. 27-32.</p>
+<p>Haberl, J., D. Bronson and D. O’Neal, 1995. “An Evaluation of the Impact of Using Measured Weather Data Versus TMY Weather Data in a DOE-2 Simulation of an Existing Building in Central Texas,” ASHRAE Transactions Vol 101, Part II, pp. 558-576.</p>
+<p>Katipamula, S., and C. Claridge, 1992a. “Monitored Air Handler Performance and Comparison with a Simplified System Model,” ASHRAE Transactions, Vol. 98, Part I, pp. 341-351.</p>
+<p>Katipamula, S. and D.E. Claridge, 1992b, “Importance of Monitoring Air Handler Performance,” Proceedings of the ACEEE 1992 Summer Study on Energy Efficiency in Buildings, Volume 3, American Council for an Energy Efficient Economy, Washington, D.C., pp. 161-164.</p>
+<p>Kissock, J.K., T.A. Reddy D.E. Claridge, 1998. “Ambient-Temperature Regression Analysis for Estimating Retrofit Savings In Commercial Buildings,” ASME Journal of Solar Energy Engineering, Vol. 120, pp. 168-176.</p>
+<p>Liu, M., D.E. Claridge, J.S. Haberl, W.D. Turner, 1997. “Improving Building Energy System Performance by Continuous Commissioning,” Proceedings of the Thirty Second Intersociety Energy Conversion Engineering Conference, Vol. 3., July 27 - August 1, 1997, Honolulu, Hawaii, 9 pp.</p>
+<p>Liu, M. and D.E. Claridge, 1998. “Use of Calibrated HVAC System Models to Optimize System Operation,” ASME Journal of Solar Energy Engineering, Vol. 120, pp. 131-138.</p>
+<p>Texas Energy Cost Containment Program, 1986. “Energy Cost Reduction Analysis of Texas A&amp;M University (7110) Oceanography and Meteorology Bldg, Soil &amp; Crop Sciences Bldg, Zachry Engineering Center,” Texas Energy Engineers, Inc., 155 pp.</p>
+<p>Zhu Y, M. Liu, T. Batten, W.D. Turner, D.E. Claridge, H. Noboa and J. Zhou, 2000. “Integrated Commissioning for a Large Medical Facility,” The Twelfth Symposium on Improving Building Systems in Hot and Humid Climates Proceedings, May 15-16, San Antonio, Texas, pp. 62-69.</p>
+<p>Zhu Y, M. Liu, T Batten, W. D. Turner and D. E. Claridge, 2000. “A Simple and Quick Chilled Water Loop Balancing for Variable Flow Systems,” The 12th Symposium on Improving Building Systems in Hot and Humid Climates Proceedings, May 15-16, San Antonio, Texas, pp. 158-162.</p>
+<p>Zhu, Y, M. Liu, T. Batten, H. Noboa, D.E. Claridge, and W.D. Turner, 2000. “Optimization Control Strategies for HVAC terminal Boxes,” The 12th Symposium on Improving Building Systems in Hot and Humid Climates Proceedings, May 15-16, San Antonio, Texas, pp. 278-284.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">连续调试的案例</a><ul>
+<li><a class="reference internal" href="#project-1-zachry-engineering-center-continuous-commissioningsm">Project 1: Zachry Engineering Center Continuous CommissioningSM</a></li>
+<li><a class="reference internal" href="#project-2-brooke-army-medical-center-continuous-commissioningsm">Project 2: Brooke Army Medical Center Continuous CommissioningSM</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="Chapter9.html"
+                        title="上一章">第九章 实现建筑性能的优化</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Chapter10.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="Chapter9.html" title="第九章 实现建筑性能的优化"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CCx_zh 0.0.1 文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, Building Energy Studio.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2 创建。
+    </div>
+  </body>
+</html>

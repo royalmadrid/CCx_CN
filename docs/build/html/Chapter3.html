@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>第三章 连续调试基本措施 &#8212; CCx_zh 0.0.1 文档</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="第四章 AHU系统的连续调试措施" href="Chapter4.html" />
+    <link rel="prev" title="第二章 连续调试的优势" href="Chapter2.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="Chapter4.html" title="第四章 AHU系统的连续调试措施"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="Chapter2.html" title="第二章 连续调试的优势"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CCx_zh 0.0.1 文档</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>第三章 连续调试基本措施<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>The measures considered in this chapter are largely the classical “shut it off if it isn’t needed” measures, supplemented with “slow it down if you can.” It is important to remember that any measure must not degrade the occupant’s comfort and must not negatively impact productivity.</p>
+<div class="section" id="remove-foot-heaters-and-turn-off-desk-fans">
+<h2>3.1 Remove Foot Heaters and Turn Off Desk Fans<a class="headerlink" href="#remove-foot-heaters-and-turn-off-desk-fans" title="永久链接至标题">¶</a></h2>
+<p>The presence of foot heaters and desk fans indicates an unsuitable working environment and an energy waste as well. To turn off foot heaters and desk fans, the following actions should be taken:</p>
+<ul class="simple">
+<li><p>Adjust the individual zone temperature set point according to the occupant’s desires</p></li>
+<li><p>Balance zone airflow if foot heaters are used in a portion of the zone</p></li>
+<li><p>Adjust AHU supply air temperature and static pressure if the entire building is
+too cold or too hot</p></li>
+<li><p>Fix existing mechanical and control problems such as replacing diffusers of
+the wrong type and relocating return air grilles in order to maintain a comfortable
+zone temperature</p></li>
+</ul>
+<p>Different people have different temperature requirements to feel comfortable.
+Some organizations, however, mandate the zone temperature set point for both summer and winter. This often leads to comfort complaints and negatively impacts productivity. The operating staff must place comfort as a priority and adjust the room temperature set point as necessary. Workers should be asked to dress appropriately during the summer and winter to maintain their individual comfort if set points are centrally mandated for a facility. Most complaints can be eliminated when the room temperature is within the range of ASHRAE’s recommended comfort zone.</p>
+</div>
+<div class="section" id="turn-off-heating-systems-during-summer">
+<h2>3.2 Turn off Heating Systems During Summer<a class="headerlink" href="#turn-off-heating-systems-during-summer" title="永久链接至标题">¶</a></h2>
+<p>Heating is not needed for most buildings during the summer. When the heating system is on, the hot water or steam often leaks through control valves, causing thermal comfort problems and consuming excessive cooling and heating energy. To improve building comfort and decrease heating and cooling energy consumption, the following actions should be taken:</p>
+<ul class="simple">
+<li><p>Turn off boilers or heat exchangers if the entire building does not require
+heating</p></li>
+<li><p>Manually valve off heating and preheating coils if the heating system must be
+on for other systems</p></li>
+<li><p>Reset differential pressure of the hot water loop to a lower value to prevent
+excessive pressure on control valves during the summer</p></li>
+<li><p>Trouble-shoot individual zones or systems that have too many cold complaints * Do not turn heating off too early in the summer in order to avoid having to turn the system on and off repeatedly</p></li>
+</ul>
+<p>This measure may be applied in constant air volume systems in dry climates. When the reheat system is shut off, room comfort may be maintained by increasing supply air temperature. This measure is not suitable for other climates where the temparature of the air leaving the cooling coil must be controlled below 57°F to control room humidity levels.</p>
+<p>This simple measure results in significant energy savings as well as improved comfort in most buildings. Figure 3-1 compares the measured heating energy consumption before and after manually shutting off AHU heating valves in a building in Austin, Texas.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/Figure3_1.png"><img alt="_images/Figure3_1.png" src="_images/Figure3_1.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Figure 3-1 Comparison of Measured Daily Average Steam Consumption Before and After Manually Shutting Off Heating Coil Valves in the Business Administration Building at University of Texas at Austin</span><a class="headerlink" href="#id2" title="永久链接至图片">¶</a></p>
+</div>
+<p>The building has a floor area of 147,000 sq.ft. with two dual duct VAV systems. Before closing the heating coil manual valves, the average daily steam consumption varied from a low of 0.2 MMBtu/hr to a high of approximately 0.28 MMBtu/hr. After the manual valves were closed, steam leakage was eliminated through the heating coil. The steam consumption immediately dropped to slightly above 0.10 MMBtu/hr. Since the manual valves in this building can stay closed for more than seven months, the annual steam savings are 756 MMBtu/yr. The same amount of chilled water will be saved if the building remains at the same temperature, creating cooling energy savings of 756 MMBtu/yr as well. The annual energy cost savings is $7,560 at an energy price of $5/MMBtu. This savings is not huge, but the only action required was shutting two manual valves.</p>
+</div>
+<div class="section" id="turn-off-systems-during-unoccupied-hours">
+<h2>3.3 Turn Off Systems During Unoccupied Hours<a class="headerlink" href="#turn-off-systems-during-unoccupied-hours" title="永久链接至标题">¶</a></h2>
+<p>If a building is not occupied at night or on weekends, the HVAC system often may be turned off completely during these periods. With a properly designed warm-up/cool-down, building comfort can be maintained properly with significant energy savings. In a commercial or institutional building, office equipment and lighting make up a large portion (50% or more) of the electrical system requirements. However, a significant portion of a building (15% or more) is unoccupied during office hours due to travel, meetings, vacations, and sick leave. Turning off systems during unoccupied hours results in significant energy savings without degrading occupant comfort. This measure can be achieved by the following actions:</p>
+<ul class="simple">
+<li><p>Turn off lights, computers, printers, fax machines, desk fans and other office
+equipment when leaving the office</p></li>
+<li><p>Turn off lights and set back room thermostats after cleaning</p></li>
+<li><p>Turn off AHUs at nights and on weekends. A schedule must be developed
+for each zone or air handling unit. Turning off the system too early in the
+evening or turning the system on too late in the morning may cause comfort
+problems. Conversely, turning off a system too late in the evening or turning
+the system on too early in the morning may lose considerable savings.</p></li>
+<li><p>Turn off the boiler hot water pump at night during the summer when AHUs
+are turned off</p></li>
+<li><p>Turn off chillers and chilled water pumps when free cooling is available or
+when AHUs are turned off</p></li>
+</ul>
+<div class="sidebar">
+<p class="sidebar-title"><strong>Note</strong></p>
+<p>With a properly designed warm-up/cool-down, building comfort can be maintained properly with significant energy savings.</p>
+</div>
+<p>Figure 3-2 presents the measured building electricity consumption, excluding chiller consumption, before and after implementation of AHU and office equipment turn-off on nights and weekends in the Stephen F. Austin Building in Austin, Texas.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/Figure3_2.png"><img alt="_images/Figure3_2.png" src="_images/Figure3_2.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Figure 3-2. Hourly Whole Building Electricity Consumption at the Stephen F. Austin (SFA) Building Before and After Night Shut Down of AHUs Was Initiated</span><a class="headerlink" href="#id3" title="永久链接至图片">¶</a></p>
+</div>
+<p>The Stephen F. Austin Building has 470,000 sq.ft. of floor area with 22 dual duct AHUs. During the first phase of implementation, 16 AHUs were turned off from midnight to 4 a.m. weekdays and weekends. During the second phase, 22 AHUs were turned off from 11:00 p.m. to 5 a.m. during weekdays and weekends. During the second phase, all occupants were asked to turn off office equipment when they leave their office.</p>
+<p>The measured results show that the nighttime whole building electricity use decreased from 1,250 kW to 900 kW during the first phase. During the second phase, the nighttime minimum electricity decreased to 800 kW.</p>
+<p>It was observed that the daily peak electricity consumption after night shutdowns began is significantly lower than the base peak. For example, the lowest peak during the second phase is 1,833 kW, which is 8% lower than the base peak. The lower electricity peak indicates that some office equipment remained off during the daytime or employees were more conscientious in turning off lights and equipment when they left the office. The annual energy cost savings, including electricity, heating and cooling, were determined to be $100,000/yr using measured hourly data.</p>
+</div>
+<div class="section" id="slow-down-systems-during-unoccupied-lightly-occupied-hours">
+<h2>3.4 Slow Down Systems During Unoccupied/Lightly-Occupied Hours<a class="headerlink" href="#slow-down-systems-during-unoccupied-lightly-occupied-hours" title="永久链接至标题">¶</a></h2>
+<p>Most large buildings are never completely unoccupied. It is not uncommon to find a few people working regardless of the time of day. The zones that may be used during the weekends or at nights, are also unpredictable. System shut down often results in complaints. Substantial savings can be achieved while maintaining comfort conditions in a building by an appropriate combination of the following actions:</p>
+<ul class="simple">
+<li><p>Reset outside air intake to a lower level (0.05 cfm/sq.ft.) during these hours
+during hot summer and cold winter weather. Outside air can be reduced since
+there will be very few people in the building. Check outside and exhaust air
+balance to maintain positive building pressure.</p></li>
+<li><p>Reset the minimum airflow to a lower value, possibly zero, for VAV terminal
+boxes</p></li>
+<li><p>Program constant volume terminal boxes as VAV boxes and reset the minimum
+flow from the maximum to a lower value, possibly zero, during unoccupied
+hours</p></li>
+<li><p>Reset AHU static pressure and water loop differential pressure to lower values</p></li>
+<li><p>Set supply air fan at lower speed</p></li>
+</ul>
+<p>These measures maintain building comfort while minimizing energy consumption. The savings are often comparable with the shutdown option. Figure 3-3 presents the measured hourly fan energy consumption in the Education Building at the University of Texas at Austin.
+The Education Building has 251,000 sq.ft. of floor area with eight 50 hp. AHUs that are operated on VFDs. Prior to the introduction of this measure, the motor control center (MCC) energy consumption was almost constant. The CC  <sup>SM</sup> measure implemented was to set the fan speed at 30% at night and on weekends. The nighttime slowdown decreased the fan power from approximately 50 kW to approximately 20 kW while maintaining building comfort.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/Figure3_3.png"><img alt="_images/Figure3_3.png" src="_images/Figure3_3.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Figure 3-3. Measured (Post-CC  <sup>SM</sup>) Hourly Supply Fan Electricity Consumption in the Education Building</span><a class="headerlink" href="#id4" title="永久链接至图片">¶</a></p>
+</div>
+</div>
+<div class="section" id="limit-fan-speed-during-warm-up-and-cool-down-periods">
+<h2>3.5 Limit Fan Speed During Warm-Up and Cool-Down Periods<a class="headerlink" href="#limit-fan-speed-during-warm-up-and-cool-down-periods" title="永久链接至标题">¶</a></h2>
+<p>If nighttime shut down is implemented, warm-up is necessary during the winter and cool-down is required during the summer. During warm-up and cool-down periods, fan systems are often run at maximum speed since all terminal boxes require either maximum heating or maximum cooling. A simple fan speed limit can reduce fan power significantly. This principle may also be used in other systems such as pumps. The following actions should be taken to achieve the fan energy savings:</p>
+<ul>
+<li><p>Determine the optimal start up time using 80% (adjustable) fan capacity if
+automatic optimal start up is used</p></li>
+<li><p>Set the fan speed limit at 80% (adjustable) manually and extend the warm up
+or cool down period by 25%. If the speed limit is set at another value (x),
+determine the warm up period using the following equation:</p>
+<p><span class="math notranslate nohighlight">\(T_n = \frac{T_{exist}}{x}\)</span></p>
+</li>
+<li><p>Keep outside air damper closed during warm-up and cool-down periods</p></li>
+</ul>
+<p>The fan energy savings increase significantly as the fan speed limit decreases. Figure 3-4 presents the theoretical fan power savings. When the fan speed limit is 50% of design fan speed, the potential fan energy savings are 75% of the fan energy even if the fan runs twice as long. The theoretical model did not consider the variable speed drive loss. The actual energy savings will normally be somewhat lower than the model projected value.</p>
+<p>Note that if the outside air damper cannot be closed tightly, extra thermal energy may be required to cool or warm outside air that leaks through the damper. This factor should be considered when this measure is used.</p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/Figure3_4.png"><img alt="_images/Figure3_4.png" src="_images/Figure3_4.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Figure 3-4. Potential Fan Energy Savings Using Fan Speed Limiting</span><a class="headerlink" href="#id5" title="永久链接至图片">¶</a></p>
+</div>
+</div>
+<div class="section" id="summary">
+<h2>3.6 Summary<a class="headerlink" href="#summary" title="永久链接至标题">¶</a></h2>
+<p>Significant amounts of energy can be saved by implementing the basic CC  <sup>SM</sup> measures. More advanced CC  <sup>SM</sup> measures can be used to improve the building energy performance; however, this chapter is limited to the simple measures. Before implementing these measures, the building and HVAC system must be in good condition. Local water and air balances may be required to solve existing mechanical problems.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第三章 连续调试基本措施</a><ul>
+<li><a class="reference internal" href="#remove-foot-heaters-and-turn-off-desk-fans">3.1 Remove Foot Heaters and Turn Off Desk Fans</a></li>
+<li><a class="reference internal" href="#turn-off-heating-systems-during-summer">3.2 Turn off Heating Systems During Summer</a></li>
+<li><a class="reference internal" href="#turn-off-systems-during-unoccupied-hours">3.3 Turn Off Systems During Unoccupied Hours</a></li>
+<li><a class="reference internal" href="#slow-down-systems-during-unoccupied-lightly-occupied-hours">3.4 Slow Down Systems During Unoccupied/Lightly-Occupied Hours</a></li>
+<li><a class="reference internal" href="#limit-fan-speed-during-warm-up-and-cool-down-periods">3.5 Limit Fan Speed During Warm-Up and Cool-Down Periods</a></li>
+<li><a class="reference internal" href="#summary">3.6 Summary</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="Chapter2.html"
+                        title="上一章">第二章  连续调试的优势</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="Chapter4.html"
+                        title="下一章">第四章 AHU系统的连续调试措施</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Chapter3.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="Chapter4.html" title="第四章 AHU系统的连续调试措施"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="Chapter2.html" title="第二章 连续调试的优势"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CCx_zh 0.0.1 文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, Building Energy Studio.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2 创建。
+    </div>
+  </body>
+</html>

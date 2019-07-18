@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>第二章 连续调试的优势 &#8212; CCx_zh 0.0.1 文档</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="第三章 连续调试基本措施" href="Chapter3.html" />
+    <link rel="prev" title="第一章 连续调试介绍" href="Chapter1.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="Chapter3.html" title="第三章 连续调试基本措施"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="Chapter1.html" title="第一章 连续调试介绍"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CCx_zh 0.0.1 文档</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>第二章  连续调试的优势<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>The term Continuous Commissioning (CC  <sup>SM</sup>) was first used by engineers at
+the Texas Engineering Experiment Station’s Energy Systems Lab (ESL) at Texas A&amp;M University
+to describe an ongoing process that improves building operation using measured hourly energy
+use and environmental data. The first buildings to undergo a Continuous CommissioningSM process
+were in the Texas LoanSTAR program [Liu, et al, 1994, Claridge, et al, 1994]. <a class="footnote-reference brackets" href="#id3" id="id2">1</a> These buildings
+were retrofitted with various energy efficiency improvements; measured hourly data were available
+to verify that the retrofits were performing as desired and analyze the overall building performance.
+The ESL engineers applied the CC  <sup>SM</sup> process to LoanSTAR buildings where it resolved major comfort
+complaints and decreased whole building energy consumption by another 15% to 30% [Gregerson, 1997].
+The ESL engineers quickly applied the CC  <sup>SM</sup> process to other types of buildings, and the results were
+comparable in savings and comfort improvements.</p>
+<p>In this chapter, the economics and other benefits of the CC  <sup>SM</sup> process are discussed based on the experience
+gained from implementing the process in more than 130 buildings. Actual cost and savings data are provided
+and a detailed example is presented.</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>Note</strong></p>
+<p>The ESL engineers applied the CC process to LoanSTAR buildings where it resolved major comfort complaints
+and decreased whole building energy consumption by another 15% to 30%.</p>
+</div>
+<div class="section" id="economics-of-cc-sm">
+<h2>2.1 Economics of CC  <sup>SM</sup><a class="headerlink" href="#economics-of-cc-sm" title="永久链接至标题">¶</a></h2>
+<p>The energy savings and costs are well documented in more than 130 buildings commissioned by the ESL. CC  <sup>SM</sup> costs consist of commissioning labor costs, metering costs, and energy savings determination and reporting costs. Note that the costs of replacing broken or damaged parts are generally covered by the maintenance budget and have not been charged to the CC  <sup>SM</sup> effort. The energy savings are normally determined using measured hourly energy consumption data. No credit is given to productivity increases by occupants as a result of improved comfort and lower absenteeism because of lack of documentation of this benefit. Credible anecdotal evidence, however, suggests that occupant productivity can increase substantially when facility IAQ and comfort improve.</p>
+<p>The costs are tracked using actual labor costs. Table 2-1 summarizes the commissioning labor for Phase 2 and energy savings for 28 of the commissioned buildings. This table shows the annual savings, the cost of the CC  <sup>SM</sup> labor (if the combined time cost of CC  <sup>SM</sup> engineers and technicians is charged at $100/hour) and the simple payback.</p>
+<p>It should be noted that these costs represent the initial commissioning effort. They do not include metering and reporting costs or cost of the time devoted to the effort by building facility staff. Nor do they include follow-up labor costs to find and fix problems related to subsequent component failures or other problems. The simple payback varies from 0.3 years to 2.0 years. The cost of metering is discussed in detail later in the chapter.</p>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Table 2-1. Savings, Labor Costs and Simple Payback by Building Type
+for the Commissioning of 28 Buildings</span><a class="headerlink" href="#id4" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 16%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Building Type</p></th>
+<th class="head" rowspan="2"><p>Number of</p>
+<p>Buildings</p>
+</th>
+<th class="head"><p>Savings</p></th>
+<th class="head"><p>Labor Cost</p></th>
+<th class="head"><p>Simple Payback</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>$/1000ft2/yr</p></th>
+<th class="head"><p>$/1000ft2/yr</p></th>
+<th class="head"><p>Years</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>Hospitals</p></td>
+<td><p>6</p></td>
+<td><p>430</p></td>
+<td><p>474</p></td>
+<td><p>1.1</p></td>
+</tr>
+<tr class="row-even"><td><p>Laboratory/Offices</p></td>
+<td><p>7</p></td>
+<td><p>1260</p></td>
+<td><p>368</p></td>
+<td><p>0.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Classroom/Offices</p></td>
+<td><p>5</p></td>
+<td><p>430</p></td>
+<td><p>226</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Offices</p></td>
+<td><p>8</p></td>
+<td><p>220</p></td>
+<td><p>329</p></td>
+<td><p>1.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Schools</p></td>
+<td><p>2</p></td>
+<td><p>170</p></td>
+<td><p>336</p></td>
+<td><p>2.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Averages/Total</p></td>
+<td><p>28</p></td>
+<td><p>540</p></td>
+<td><p>359</p></td>
+<td><p>0.7</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 2-2 provides more-detailed information on the initial commissioning labor costs and energy savings for each of the 28 commissioned buildings. It provides information on building type, location, floor area, measured annual savings, savings per square foot of floor area, commissioning labor and the year initial commissioning was completed. The measured annual savings varied from $10,000/yr to $395,000/yr with an average of $90,000, or $0.64/ft2/yr for the 28 buildings. The measured savings per square foot were strongly dependent on the building type. Average savings were $1.26/ft2/yr for seven medical research laboratory buildings, $0.43/ft2/yr for six hospitals, $0.43/ft2/yr for five university teaching and office buildings, $0.22/ft2/yr for seven office buildings and $0.17/ft2/yr for two school buildings. It should be noted, however, that the variation between buildings within a single category is often as great as the variation between building types.</p>
+<p>The CC  <sup>SM</sup> costs are strongly dependent on the building type and building condition, HVAC system type and size, HVAC system condition and the type and condition of the building automation system. Generally speaking, higher CC  <sup>SM</sup> costs are directly associated with more existing mechanical and comfort problems, more complex system types, smaller HVAC system sizes, poorly maintained systems and old building automation systems. The CC  <sup>SM</sup> cost per unit floor area for particular office buildings may be higher than the cost of some hospitals or laboratory buildings due to old building automation systems (See Table 2-2 for details). The labor cost is a complex matrix of the factors mentioned above. The cost of implementing CC  <sup>SM</sup> must be determined case by case, based on individual building information.</p>
+<p>The commissioning effort in these buildings focused strongly on resolving known comfort problems and optimizing energy use in the buildings. In some cases, building owners asked that the commissioning engineers go through the buildings and examine the operation and control of all parts of the system to specifically identify and replace any malfunctioning components in addition to dealing with known comfort problems. In these cases, the labor costs are significantly higher. These problems must be addressed before complete operational savings potential can be realized.</p>
+<table class="docutils align-center" id="id5">
+<caption><span class="caption-text">Table 2-2. Summary of Measured Savings and Cost for 28 Buildings Commissioned According to
+       ESL Continuous CommissioningSM Guidelines</span><a class="headerlink" href="#id5" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 23%" />
+<col style="width: 25%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Approach</p></th>
+<th class="head"><p>Metering Cost</p></th>
+<th class="head"><p>Reporting Cost</p></th>
+<th class="head"><p>Total Cost</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Metering is important to develop energy baselines, evaluate CC  <sup>SM</sup> energy savings and identify operation and control problems. The parameters metered vary with the type of metering used. Use of utility bills requires both monthly electrical and gas bills. Use of short-term monitored data requires hourly chilled water energy or chiller electricity, heating water energy or gas consumption, possibly whole building electricity consumption, and/or electricity consumption of selected end uses such as fan motors.</p>
+<p>Use of long-term hourly data requires chilled water energy or chiller electricity, hot water/steam energy or gas consumption and building electricity consumption. Lighting and motor control center electricity may be sub-metered in some cases. However, the additional costs of metering the lighting and motor control center electricity limit access to this data.</p>
+<p>Metering costs depend on the type of metering used: utility bills, short-term monitoring with dedicated meters, long-term monitoring with existing meters or long- term monitoring with dedicated meters. The reporting cost also often correlates with the type of metering used. Table 2-3 lists the average metering and reporting costs for a typical building. Although costs will vary greatly depending on the complexity of the building and the location of the building, the average cost of metering and reporting varies from $1,500 to $20,500. Some methods may not be suitable for a particular project due to specific accuracy requirements. In addition, use of utility billing data (see chapter 1) will not provide diagnostic benefits for follow-up services. The type of metering should be selected based on the interests of the owner, potential savings opportunities, and the overall CC  <sup>SM</sup> plan.</p>
+<table class="docutils align-center" id="id6">
+<caption><span class="caption-text">Table 2-3. Typical Costs for Metering a Building and Reporting Savings for One Year</span><a class="headerlink" href="#id6" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 23%" />
+<col style="width: 25%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Approach</p></th>
+<th class="head"><p>Metering Cost</p></th>
+<th class="head"><p>Reporting Cost</p></th>
+<th class="head"><p>Total Cost</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Utility Bills</p></td>
+<td></td>
+<td><p>$1500</p></td>
+<td><p>$1500</p></td>
+</tr>
+<tr class="row-odd"><td><p>Short Term</p>
+<p>dedicated Meters</p>
+</td>
+<td><p>$5000</p></td>
+<td><p>$5000</p></td>
+<td><p>$10000</p></td>
+</tr>
+<tr class="row-even"><td><p>Long Term  with</p>
+<p>Existing Meters</p>
+</td>
+<td><p>$4000</p></td>
+<td><p>$3500</p></td>
+<td><p>$7500</p></td>
+</tr>
+<tr class="row-odd"><td><p>Long Term with</p>
+<p>Dedicated Meters</p>
+</td>
+<td><p>$17000</p></td>
+<td><p>$3500</p></td>
+<td><p>$20500</p></td>
+</tr>
+</tbody>
+</table>
+<p>If the savings are determined from the utility bills before and after Continuous CommissioningSM, there is no metering cost. The staff may directly compare similar months of utility bills before and after CC  <sup>SM</sup>. This is the least-accurate approach and should not be used unless it can be shown that the facility energy use is independent of weather, has the same occupancy level before and after CC  <sup>SM</sup>, uses the same operational schedule before and after CC  <sup>SM</sup> and the expected savings are greater than 15% of the total energy consumption. If a more formal comparison is done that considers billing period length, corrects for weather variations and provides a formal report, a typical cost would be $1,500.</p>
+<p>When portable meters or loggers are used to measure whole-building electricity, chilled water, and hot water consumption for a short time period (one or two weeks), the cost varies from $3,000 to $10,000 with a typical cost of $5,000. This cost includes labor and travel (2 trips) to the building, meter hook-up, recording data for two weeks and the associated meter rental.</p>
+<p>When short-term data are used to determine annual savings, a simplified hourly simulation model must be calibrated to the short-term data and a longer period of utility billing data. The modeling effort varies greatly according to available data, building type and size, and HVAC system and operational schedules. This cost can vary from $3,000 to $10,000 per building, but is typically $5,000.</p>
+<p>When an EMCS is used to measure whole building electricity, chilled water, and hot water consumption with existing meters, the cost may vary from essentially zero (if all sensors are already present) to $20,000 or more if a complete set of new sensors and channels must be added to the system to record heating, cooling and other energy use. The cost of $4,000 shown in the table assumes that a minimal amount of new equipment is needed and that existing equipment is calibrated. New meters with dedicated data loggers can be installed to measure whole building heating, cooling and electricity use. The cooling use may come from metering the chiller and associated parasitic electricity use, or metering chilled water energy consumption. Likewise, heating consumption may come from metering heating water energy consumption or boiler gas consumption. The metering cost may be below $10,000 when only whole-building electricity and gas consumption are measured. Note that gas is typically measured by adding a signal splitter to the existing gas meters due to the higher cost associated with installing a dedicated gas meter. The metering cost is approximately $15,000 for a building where chilled water and hot water are to be measured. When there are multiple transformers, metering costs can easily exceed $20,000 including data acquisition and analysis.</p>
+<p>When hourly data are available, a statistical regression model can be used to determine the savings accurately. The cost varies from $3,000 to $4,000 per building. This cost includes the baseline model development, database management, savings analysis and reporting.
+The metering cost is likely to decrease as more meters are installed as part of building automation systems. When existing meters are used, sensor calibration should be conducted first to verify the sensor accuracy and operating range. For example, a differential pressure transmitter with a 100 in H2O range may be used to transfer a signal with a maximum value of 10 in H2O. In this case, the sensor should be replaced due to a mismatch of the signal range with the sensor range.</p>
+</div>
+<div class="section" id="benefits-of-cc-sm">
+<h2>2.2 Benefits of CC  <sup>SM</sup><a class="headerlink" href="#benefits-of-cc-sm" title="永久链接至标题">¶</a></h2>
+<p>The CC  <sup>SM</sup> process uniquely combines four features that make it an attractive engineering process. These four features are (1) sustainable engineering solutions to operational problems, (2) superior energy and comfort performance, (3) increased staff skills and (4) service as an enabling factor for a comprehensive facility overhaul. Each feature is discussed below and examples are given.</p>
+<p><strong>2.2.1 Sustainable Engineering Solutions for Operational Problems</strong></p>
+<p>Sustainable engineering solutions are often not used to solve existing operational and comfort problems in buildings. Part of the reason is a lack of understanding of the problems and a lack of engineering knowledge by some facility operations staff. During the CC  <sup>SM</sup> process, a thorough engineering inspection is conducted and measurements are made. Sustainable engineering solutions based on fundamental engineering principles are developed and implemented. This will generally solve the existing problems and decrease the maintenance cost.</p>
+<p><strong>CASE STUDY EXAMPLE:</strong></p>
+<p>Four large hearing rooms in a new state building could not maintain room temperature at the required set point (72°F) when a large number of people used the facility. In an attempt to resolve the problem, users of the facility were required to inform the operating staff 24 hours before each scheduled use. The operating staff then precooled the room temperature to temperatures as low as 66°F before a meeting. The room temperature could then be maintained below 74°F if the meeting lasted less than three hours. However, cold complaints often occurred at the beginning of the meetings and hot complaints occurred later, particularly in longer meetings.</p>
+<p>After a thorough analysis, the CC  <sup>SM</sup> engineers developed the following solutions. The supply air static pressure and temperature were reset based on the maximum terminal box damper position. If the maximum terminal damper position is less than 80% open, the supply air temperature is reset to a higher value but should not exceed the high limit determined by the room relative humidity requirement. The static pressure set point is decreased but may not decrease below a low limit setpoint. If the maximum terminal box damper position is more than 80% open, the supply air temperature is reset to a lower value and the static pressure is reset to a higher value. The room temperature set point remains at 72°F. Since the building has a modern EMCS, this type of sophisticated control and schedule were easily implemented by building operators. This control schedule provides more than the design cooling capacity to the hearing room when it is required. The “additional capacities” come from the system diversity. When a hearing room required maximum cooling, other rooms served by the same unit had less than the design cooling load. This improved schedule made the occupants more comfortable, decreased energy consumption and reduced complaints for the operating staff .</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>Note</strong></p>
+<p>The modeling effort varies greatly according to available data, building type and size, and HVAC system and operational schedules. This cost can vary from $3,000 to $10,000 per building, with $5,000 being typical.</p>
+</div>
+<p><strong>2.2.2 Superior Energy and Comfort Performance</strong></p>
+<p>Design engineers face uncertainties in building design because they lack knowledge of actual occupancy levels and construction quality. To insure a workable building, HVAC systems are often designed with more capacity than required. Conservative</p>
+<p>operation and control schedules are recommended. The HVAC engineers often pay little attention to part-load control and operation. Consequently, working as designed, a system may have poor energy performance. In addition, an excessively large system often creates comfort problems since it may not control well under very low load conditions.</p>
+<p>During the CC  <sup>SM</sup> process, accurate occupancy and operational information are available. The CC  <sup>SM</sup> engineers can develop an improved or practical optimal operation and control schedule based on the information gathered during the CC  <sup>SM</sup> assessment. Moreover, the CC  <sup>SM</sup> engineers can fine-tune their schedules to ensure the best performance. Implementing the CC  <sup>SM</sup> process often results in additional energy savings for both retrofit projects and new construction projects [Claridge et al. 1996, Liu et al. 1998].</p>
+<p><strong>CASE STUDY EXAMPLE:</strong></p>
+<p>Figure 2-1 compares the annual energy costs before retrofit, after retrofit and after CC  <sup>SM</sup> in three major medical facilities. The measured savings from CC  <sup>SM</sup> are higher than the retrofit savings in two of the facilities and slightly less than the retrofit savings in the third facility. The CC  <sup>SM</sup> costs were a small fraction of the retrofit (capital) costs. The equipment replaced or upgraded was important to these facilities. However, in each of these three cases the retrofits were considered “completed” even though significant savings ($2,471,000/yr) resulted from commissioning of the retrofits and the facilities.</p>
+<div class="figure align-center" id="id7" style="width: 600px">
+<img alt="_images/Figure2_1.png" src="_images/Figure2_1.png" />
+<p class="caption"><span class="caption-text">Figure 2-1. Energy Costs Before Retrofit, After Retrofit, and After Retrofit and CC  <sup>SM</sup> at University of Texas, Health Science Center (UTHSC), University of Texas Medical Branch at Galveston (UTMB), University of Texas, M. D. Anderson Cancer Center (MDA)</span><a class="headerlink" href="#id7" title="永久链接至图片">¶</a></p>
+</div>
+<p><strong>2.2.3 Increased Staff Skills</strong></p>
+<p>During the CC  <sup>SM</sup> process, the CC  <sup>SM</sup> engineers work closely with the building staff to identify operating problems and determine optimal operating strategies. The staff is also heavily involved in the decisions to implement specific commissioning measures and may actually implement these measures. Hence, they gain a higher level of skill and understanding of the engineering principles involved in optimal building operation. In addition, the staff may attend a training workshop as part of the CC  <sup>SM</sup> process as was done at the Fairview University Medical Center in the case study described later.</p>
+<p><strong>2.2.4 An Enabling Factor for Comprehensive System Overhaul</strong></p>
+<p>A comprehensive system overhaul or major system upgrade is often delayed or canceled due to lack of funding. This problem can be resolved if savings from the CC  <sup>SM</sup> process are used to fund the upgrade project.</p>
+<p>The CC  <sup>SM</sup> process requires minimal initial investment and produces significant energy savings as soon as the process starts. Positive cash flow is often achieved in less than two years. This creates the opportunity to use utility savings to support major retrofit projects.
+The CC  <sup>SM</sup> process can have another significant impact on retrofit projects. It reduces the audit and engineering analysis cost since major cost-effective measures are normally identified during the CC  <sup>SM</sup> process. It also decreases the risk of engineering mistakes during retrofits since the commissioning process results in an excellent understanding of the characteristics and operation of the existing systems. Consequently, retrofit costs can be controlled to a minimum.</p>
+<p><strong>CASE STUDY EXAMPLE:</strong></p>
+<p>Texas A&amp;M University initiated campus-wide CC  <sup>SM</sup> in 1995. A comprehensive energy information system was installed in 80 major buildings and five central plants at a total cost of nearly $1,000,000. The CC  <sup>SM</sup> started in May 1996 after energy baselines were established for several buildings. The annual budget since 1996 for CC  <sup>SM</sup>, data acquisition, and reporting is approximately $600,000. Figure 2-2 presents the accumulated savings, cost, and net cash flow from May 1995 to May 2001. Positive cash flow was achieved in approximately two years. In smaller projects, positive cash flow has often been achieved in less than one year.</p>
+<p>The positive results of the CC  <sup>SM</sup> project accelerated the process of upgrading the campus EMCS systems. Since 1996, central EMCS systems have been installed in 45 buildings and nine pumping facilities.</p>
+<div class="figure align-center" id="id8" style="width: 600px">
+<img alt="_images/Figure2_2.png" src="_images/Figure2_2.png" />
+<p class="caption"><span class="caption-text">Figure 2-2. Accumulated Project Cost, Energy Cost Savings and Positive Cash Flow at Texas A&amp;M University, College Station Campus</span><a class="headerlink" href="#id8" title="永久链接至图片">¶</a></p>
+</div>
+</div>
+<div class="section" id="cc-sm-project-example">
+<h2>2.3 CC  <sup>SM</sup> Project Example<a class="headerlink" href="#cc-sm-project-example" title="永久链接至标题">¶</a></h2>
+<p>Riverside North is an extended-care mental health facility built in 1962 as one of the Fairview University Medical Center hospitals in Minneapolis, Minnesota. The gross floor area is approximately 37,300 sq. ft. on four floors, excluding the basement. The building receives steam from a district steam plant and chilled water from a central campus plant. Two major air-handling units (AHUs) serve the entire building with induction terminal units. The AHUs each have 20 hp. supply fans and 10 hp. return fans operated at a constant speed 24 hours per day. Hot water supplied by steam to hot water converters is circulated to reheat coils and supplemental perimeter radiation by four 7.5 hp. pumps. The supplemental perimeter radiation system was turned on manually at outdoor temperatures below approximately 10°F and was automatically reset over a range of 120°F to 180°F when the outside air temperature varied from 10°F to -20°F. Chilled water is circulated through the building by a 10 hp. pump with a variable frequency drive located in the basement. The building has unitary controllers and a supervisory control building automation system.</p>
+<p>The CC  <sup>SM</sup> engineers were responsible for training technicians, identifying CC  <sup>SM</sup> measures, conducting the engineering analysis and supervising in-house technicians during the field measurement and implementation phases. As part of the training, a two-day workshop was provided to participating technicians and other key facility staff. The CC  <sup>SM</sup> engineers participated in the initial field measurement process since the building is relatively small.</p>
+<p>After the engineering analysis, six CC  <sup>SM</sup> measures summarized in Table 2-4 were identified.</p>
+<table class="colwidths-given docutils align-default" id="id9">
+<caption><span class="caption-text">Table 2-4. CC Measures Identified/Implemented at Riverside North</span><a class="headerlink" href="#id9" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Measure and Details</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ul>
+<li><p>Reduce total supply airflow from 1.7 to 1.1 cfm/sq.ft.</p>
+<ul class="simple">
+<li><p>Change supply and return motor sheaves, reduce fan speeds</p></li>
+<li><p>Follow up with necessary fixes to maintain comfort</p></li>
+</ul>
+</li>
+<li><p>Reduce outside air from 17,300 cfm to 6,660 cfm</p>
+<ul class="simple">
+<li><p>Reduce fan speeds and properly match supply and return speeds</p></li>
+<li><p>Repair OA dampers and actuators</p></li>
+<li><p>Readjust minimum OA damper position based on measured OA flow</p></li>
+</ul>
+</li>
+<li><p>Reset supply air temperature as a function of outside air temperature</p>
+<ul>
+<li><p>Replace constant temperature pneumatic controller with Trane stand-alone</p>
+<p>controllers tied into the existing Trane supervisory control</p>
+</li>
+<li><p>Switch from constant 55°F supply air to a reset schedule between 53°F and 65°F</p></li>
+<li><p>Follow up with necessary fixes to maintain comfort</p></li>
+</ul>
+</li>
+<li><p>Automate and increase reset of reheat water temperature as  function of</p>
+<p>outside airtemperature, reduce reheat water flow rate</p>
+<ul>
+<li><p>Switch from manual reset between 180°F water in winter and 150°F to  160°F</p>
+<p>in summer to automatic reset between 180°F water at -20°F OAT and 110°F</p>
+<p>at 90°F OAT, using spare points on existing unitary controller</p>
+</li>
+<li><p>Reduce reheat pump flow with manual valve</p></li>
+</ul>
+</li>
+<li><p>Automatically cut off perimeter radiation above 10ºF outside air temperature</p>
+<p>using spare points on existing unitary controller</p>
+</li>
+<li><p>Implement zone-level fixes to assure comfort</p>
+<ul class="simple">
+<li><p>Clean nozzle plates in induction units</p></li>
+<li><p>Repair leaking reheat valves</p></li>
+<li><p>Calibrate thermostats</p></li>
+<li><p>Spot-balance air flows</p></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>At the owner’s request, a new unitary Trane controller replaced the existing pneumatic controller. All existing sensors of the AHU systems also were replaced with new ones. The energy savings were determined using short-term measured data. Figure 2-3 compares the measured heating energy consumption before and after CC  <sup>SM</sup> measures were implemented. A significant reduction in cooling energy use was also achieved as noted in Table 2-5.</p>
+<div class="figure align-center" id="id10" style="width: 600px">
+<img alt="_images/Figure2_3.png" src="_images/Figure2_3.png" />
+<p class="caption"><span class="caption-text">Figure 2-3. Hourly Reheat Energy at Riverside North (15-minute data)</span><a class="headerlink" href="#id10" title="永久链接至图片">¶</a></p>
+</div>
+<p>Table 2-5 summarizes the measured energy cost savings, cost and payback. The measured annual energy cost savings are $45,512 including $10,906 for fan power, $5,700 for chiller power, $65 for radiation pump and $28,841 for heating. The total project costs were $40,146 including $10,850 for controller and sensors, $19,296 for CC  <sup>SM</sup> engineers and approximately $10,000 for in-house labor for technician participation in training, field measurement and implementation. The simple payback was 0.9 years.</p>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Table 2-5. Savings and Costs at Riverside North</span><a class="headerlink" href="#id11" title="永久链接至表格">¶</a></caption>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 29%" />
+<col style="width: 20%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 14%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="6"><p><strong>Savings</strong></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>END USE</p></td>
+<td rowspan="2"><p>Source</p></td>
+<td><p>Electricity</p></td>
+<td><p>Demand</p></td>
+<td><p>Steam</p></td>
+<td><p>Dollars</p></td>
+</tr>
+<tr class="row-odd"><td><p>kWh/y</p></td>
+<td><p>kW/mo</p></td>
+<td><p>MMBTU</p></td>
+<td><p>$</p></td>
+</tr>
+<tr class="row-even"><td><p>Fan</p></td>
+<td><p>Measured True</p>
+<p>Power Pre - Post</p>
+</td>
+<td><p>218,124</p></td>
+<td><p>24.9</p></td>
+<td><p>–</p></td>
+<td><p>10,906</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chiller</p></td>
+<td><p>Modeled based on</p>
+<p>SA rate and SAT</p>
+</td>
+<td><p>114,000</p></td>
+<td><p>33.4</p></td>
+<td><p>–</p></td>
+<td><p>5,700</p></td>
+</tr>
+<tr class="row-even"><td><p>Radiation
+Pump</p></td>
+<td><p>Estimated</p></td>
+<td><p>1,300</p></td>
+<td></td>
+<td><p>–</p></td>
+<td><p>65</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reheat</p></td>
+<td><p>Measured energy</p>
+<p>bin analysis</p>
+</td>
+<td></td>
+<td></td>
+<td><p>3,770</p></td>
+<td><p>28,841</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>Total</p></td>
+<td><p>333,424</p></td>
+<td><p>58.3</p></td>
+<td><p>3,770</p></td>
+<td><p>45,512</p></td>
+</tr>
+<tr class="row-odd"><td colspan="6"><p><strong>Costs</strong></p></td>
+</tr>
+<tr class="row-even"><td colspan="5"><p>Equipment&amp;materials</p>
+<p>(Trane Controller and a few sensors)</p>
+</td>
+<td><p>10,850</p></td>
+</tr>
+<tr class="row-odd"><td colspan="5"><p>Engineering</p></td>
+<td><p>19,296</p></td>
+</tr>
+<tr class="row-even"><td colspan="5"><p>In-house labor</p></td>
+<td><p>10,000</p></td>
+</tr>
+<tr class="row-odd"><td colspan="5"><p>Total</p></td>
+<td><p>401,46</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="summary">
+<h2>2.4 Summary<a class="headerlink" href="#summary" title="永久链接至标题">¶</a></h2>
+<p>The Continuous CommissioningSM process typically provides payback in less than three years and often in less than two years. Project duration typically varies from three to six months per building.</p>
+<p>The CC  <sup>SM</sup> process improves building comfort and decreases maintenance cost. It also provides significant benefits to the owners by (1) identifying potential energy retrofits, (2) upgrading the technical level of in-house staff and (3) providing energy savings that may be used to finance a comprehensive facility overhaul or upgrade.</p>
+<p><strong>References</strong></p>
+<p>Claridge, D.E., J.S. Haberl, M. Liu, J. Houcek and A. Athar, 1994. “Can You Achieve 150% of Predicted Retrofit Savings: Is It Time for Recommissioning?” ACEEE 1994 Summer Study on Energy Efficiency In Buildings Proceedings: Commissioning, Operation and Maintenance, Vol. 5, American Council for an Energy Efficient Economy, Washington, D.C., pp. 73-87.</p>
+<p>Claridge, D.E., M. Liu, Y. Zhu, M. Abbas, A. Athar and J.S. Haberl, 1996. “Implementation of Continuous CommissioningSM in the Texas LoanSTAR Program: Can You Achieve 150% of Estimated Retrofit Savings Revisited,” Proceedings 4, Commercial Buildings: Technologies, Design, and Performance Analysis. ACEEE 1996 Summer Study on Energy Efficiency In Buildings, American Council for an Energy Efficient Economy, Washington, D.C., pp. 4.59-4.67.</p>
+<p>Gregerson, Joan, 1997. “Cost Effectiveness of Commissioning 44 Existing Buildings,” Proceedings Fifth National Conference on Building Commissioning, Huntington Beach, CA April 28-30.</p>
+<p>Liu, M., A. Athar, D.E. Claridge, J. S. Haberl and E. White, 1994a. “Reducing Building Energy Costs Using Optimized Operation Strategies for Constant Volume Air Handling Systems,” Proceedings of the Ninth Symposium on Improving Building Systems in Hot and Humid Climates, Arlington, Texas, May 19-20, pp. 192-204.</p>
+<p>Liu, M., J. Houcek, A. Athar, A. Reddy and D.E. Claridge, 1994b. “Identifying and Implementing Improved Operation and Maintenance Measures in Texas LoanSTAR Buildings,” ACEEE 1994 Summer Study on Energy Efficiency In Buildings Proceedings: Commissioning, Operation and Maintenance, Vol. 5, American Council for an Energy Efficient Economy, Washington, D.C., pp. 153-165.</p>
+<p>Liu, M., Y. Zhu, T. Powell and D.E. Claridge, 1998. “System Optimization Saves $195,000/yr. in a New Medical Facility,” Proceedings of the 6th National Conference on Building Commissioning, Lake Buena Vista, FL, May 18-20, pp. 14.2.1-14.2.11.</p>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>LoanSTAR is an acronym for Loans to Save Taxes and Resources, a major public building retrofit program administered by the Texas State Energy Conservation Office.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第二章  连续调试的优势</a><ul>
+<li><a class="reference internal" href="#economics-of-cc-sm">2.1 Economics of CC  <sup>SM</sup></a></li>
+<li><a class="reference internal" href="#benefits-of-cc-sm">2.2 Benefits of CC  <sup>SM</sup></a></li>
+<li><a class="reference internal" href="#cc-sm-project-example">2.3 CC  <sup>SM</sup> Project Example</a></li>
+<li><a class="reference internal" href="#summary">2.4 Summary</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="Chapter1.html"
+                        title="上一章">第一章 连续调试介绍</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="Chapter3.html"
+                        title="下一章">第三章 连续调试基本措施</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Chapter2.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="Chapter3.html" title="第三章 连续调试基本措施"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="Chapter1.html" title="第一章 连续调试介绍"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CCx_zh 0.0.1 文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, Building Energy Studio.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2 创建。
+    </div>
+  </body>
+</html>
