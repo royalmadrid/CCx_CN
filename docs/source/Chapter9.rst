@@ -11,7 +11,7 @@ CCSM activities are essential to optimize building system operation and reduce e
 
 This chapter discusses guidelines to perform these tasks.
 
-9.1 Document CCSM Project
+9.1 连续调试项目档案
 ---------------------------
 
 The documentation should be brief and accurate. The operating sequences should be documented accurately and carefully. This documentation should not repeat the existing building documentation. It should describe the procedures implemented, including control algorithms and briefly give the reasons behind these procedures. The emphasis is on accurate and usable documentation. The documentation should be easily used by operating staff. For example, operating staff should be able to create operating manuals and procedures from the document.
@@ -46,6 +46,7 @@ The following information should be obtained and documented:
 * Comfort improvements after commissioning
 
 9.1.3 AHUs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following information should be documented for each AHU:
 
@@ -68,6 +69,7 @@ The following information should be documented for each AHU:
 * Optimal control sequence and implementation
 
 9.1.4 Water Loop
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following information should be collected for the water loop and pumps:
 
@@ -113,7 +115,7 @@ The following information should be collected for the control system:
 * Mechanical and electrical system operation improvement
 * Other improvements
 
-9.2 Measure Energy Savings
+9.2 测量节能量
 ------------------------------
 
 Most building owners expect the CCSM project to pay for itself through energy savings. Measurement of energy savings is one of the most important issues for CCSM projects. The measurement should follow the International Performance Measurement and Verification Protocol [2001 IPMVP], or other widely accepted standard methods. The process for determining savings as adopted in the IPMVP [2001] defines energy savings, Esave, as:
@@ -204,12 +206,12 @@ Savings are determined through simulation of the facility components and/or the 
 
 Similar to the other options, the implementation of proper operating practices should be confirmed. It is particularly important that personnel, experienced in the use of the particular simulation tool, conduct the analysis. The simulation analysis must be well documented, with electronic and hard copies of the simulation program input and output archived.
 
-9.3 Trained Operating and Maintenance Staff
+9.3 培训运行维护人员
 ---------------------------------------------
 
 Efficient building operation begins with a qualified and committed staff. Since the CCSM process generally makes changes in the way a building is operated in order to improve comfort and efficiency, it is essential that the operators be a part of the commissioning team. They must work with the CCSM engineers, propose CCSM measures and implement or help implement them. In addition to actively participating in the CCSM process, formal technical training should be provided to ensure that the operating staff understands the procedures implemented so they can perform trouble-shooting properly.
 
-9.4 Continuously Measure Energy Performance
+9.4 持续测量能耗性能
 ----------------------------------------------
 
 The measurement of energy consumption data is very important to maintain building performance and maintain CCSM savings. The metered data can be used to: 
@@ -239,7 +241,7 @@ The measurement of energy consumption data is very important to maintain buildin
     while the CCSM process is initiated, be used whenever new hot calls or cold calls
     are received.
 
-9.5 Utilize Expert Support as Needed
+9.5 如有必要可以采用专家决策
 ----------------------------------------
 
 It is inevitable that a problem will arrive, which after careful trouble-shooting will point toward a problem with one or more of the CCSM measures which have been implemented. Ask the CCSM providers for help in solving such problems before undoing an implemented CCSM measure. Sometimes it will be necessary to modify a measure that has been implemented. The CCSM engineers will often be able to help find the most efficient solution, or find another explanation so the problem can be remedied without changing the measure.

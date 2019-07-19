@@ -11,7 +11,7 @@ Thermal storage systems are intended to meet part or all of the cooling needs of
 
 Thermal storage systems save costs by decreasing peak electrical demand during the electric utility’s peak demand window. However, the billed demand may also depend on off-peak demand. Therefore, the cost savings strongly depend on the utility rate structure. For example, if there is a ratchet on the demand, a single system failure during the summer peak can largely eliminate the savings produced by the system for the entire year. Although optimizing thermal storage operation often requires special considerations based on each case, several CCSM measures apply to any type of thermal storage system. This chapter only discusses these measures.
 
-8.1 Maximize Building Return Water Temperature
+8.1 最大化建筑回水温度
 --------------------------------------------------
 
 Low return water temperature is the primary problem with thermal storage systems. A low return water temperature prevents the chiller from operating at full load. Consequently, the chiller may not be able to charge the tank during off-peak hours. A low return water temperature can also significantly reduce the storage capacity of the system. For example, if the building return temperature is 50°F instead of 54°F, the thermal storage capacity will be decreased by 33% if the design temperature difference is 12°F. To increase the return water temperature, the following procedures should be followed:
@@ -37,7 +37,7 @@ Low return water temperature is the primary problem with thermal storage systems
   may also cause humidity control problems. As soon as the water balance is
   improved, the blending station should be disabled.
 
-8.2 Improve Chilled Water Flow Control Through Chillers
+8.2 改善通过冷机的冷水流量控制
 ----------------------------------------------------------
 
 It is important to control the chilled water flow at the design value. If the chilled water flow is lower than design flow, the chiller will not be able to produce full capacity. The tank may not be fully charged as a result. If the chilled water flow is higher than the design flow value, the chilled water supply temperature will not control at the required value. The tank capacity can be decreased significantly. For example, if the chilled water supply temperature is 44°F instead of 42°F, the tank capacity is decreased by 16% based on a design temperature difference of 12°F. To improve the chilled water flow control through chillers, the following guidelines are given:
@@ -148,7 +148,7 @@ pumping power has typically been reduced by 50% or more.
 
 The savings from restoring the thermal storage system to operation were $14,190/year, with additional savings of $5,540/year resulting from the improved pump and AHU operation, for total savings of $19,730/yr. More information can be found in “Rehabilitating a Thermal Storage System through Commissioning” [Liu et al. 1999].
 
-8.3 Minimize the Off-Peak Demand
+8.3 最小化非高峰期间的供应需求
 ------------------------------------
 
 Some utility rate schedules also use off-peak demand to determine the billing demand. In these cases, decreasing off-peak demand can also result in significant cost savings. To decrease the off-peak demand, the following procedures should be followed:
@@ -256,7 +256,7 @@ The optimal control sequences were implemented in two phases. The first phase, i
 
 Figure 8-11 compares the demand charges for the base year (1997-1998), after the first phase (1998-1999) and after the second phase (1999-2000). In the base year, the on-peak demand was 1,731 kW and the off-peak demand was 2,736 kW. After the first phase, the on-peak demand was supposed to decrease to 1,400 kW. However, unexpected system failures resulted in an on-peak demand of 1,559 kW. Still, the annual demand charge reduction was 2,215 kW, or 10.0% of the base year demand charge. After the second phase, the on-peak demand was decreased to 1,332 kW. The off-peak demand was controlled between 1,879 kW and 2,207 kW during on-peak months and between 1,318 kW and 1,746 kW during off-peak months. The annual demand charge decreased from 22,158 kW/yr to 18,075 kW/yr for an 18.4% reduction. If the facility were to reduce its contract demand from 2,800 kW to 2,500 kW, it would result in 612 kW of additional demand charge savings. The total potential demand charge savings are 6,910 kW, or 28% of the base year demand charge. More information regarding this case study can be found in “Practical Optimization of Full Thermal Storage Systems Operation” [ Wei et al. 2002].
 
-8.4 Set Up an Alarm System
+8.4 设置报警系统
 -----------------------------
 An alarm system should be in place that will immediately alert the operator if a chiller is accidentally turned off. This will enable the operator to take any actions needed to get the chiller back on line so the tank will be fully charged during the charging period.
 

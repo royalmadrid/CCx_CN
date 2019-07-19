@@ -19,7 +19,7 @@ A central chiller plant could have primary and secondary loops. The primary pump
 
 This chapter focuses on the CCSM measures for optimal pressure control, water flow control, and general optimization. The supply temperature and steam optimization measures are covered in Chapters 6 and 7.
 
-5.1 Improve Building Chilled Water Pump Operation
+5.1 改善建筑冷水泵运行
 ---------------------------------------------------
 
 Most building chilled water pumping systems are equipped with variable speed devices (VSDs). If a VSD is not installed, retrofit of a VSD is generally recommended. The discussion here is limited to systems where a VSD is installed. The goal of pumping optimization is to avoid excessive differential pressures across the control valves while providing enough water to each building, coil, or other end use1. Optimal pump operation schedule should be developed using the following procedure:
@@ -128,7 +128,7 @@ The pump control may also be improved by controlling the pressure so that at lea
 
     Figure 5-3. Comparison of Chilled Water Energy Consumption Under Original and Optimal Chilled Water Differential Pressure Schedules
 
-5.2 Improve Secondary Loop Operation
+5.2 改善二级环路运行
 --------------------------------------
 The building loop optimization should be performed before the secondary loop optimization.
 
@@ -315,7 +315,7 @@ The reduced loop differential pressure reduced hot calls significantly in the bu
 
     Figure 5-8. Schematic Diagram of Central Heating System on the Texas A&M University Main Campus in College Station
 
-5.3 Improving Central Plant Water Loop Operation
+5.3 改善中央冷站水路运行
 ---------------------------------------------------
 
 The central plant loop optimization should be performed after secondary loop optimization.
@@ -491,7 +491,7 @@ With the original operating scheme, measured pumping power consumption was as sh
 
 For more details on this example, see “Installing Chiller Isolation Valves and Staging Chillers Under EMCS-A Case Study” [Deng et al. 2000b].
 
-5.4 Other Tips
+5.4 其它改善细节
 -----------------
 
 Check the expansion tank frequently and ensure it maintains a positive pressure for the entire system and does not over-pressurize the system.

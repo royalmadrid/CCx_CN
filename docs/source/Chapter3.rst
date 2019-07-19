@@ -3,7 +3,7 @@
 
 The measures considered in this chapter are largely the classical “shut it off if it isn’t needed” measures, supplemented with “slow it down if you can.” It is important to remember that any measure must not degrade the occupant’s comfort and must not negatively impact productivity.
 
-3.1 Remove Foot Heaters and Turn Off Desk Fans
+3.1 移走便携式加热器以及关掉桌面风扇
 ------------------------------------------------
 
 The presence of foot heaters and desk fans indicates an unsuitable working environment and an energy waste as well. To turn off foot heaters and desk fans, the following actions should be taken:
@@ -19,7 +19,7 @@ The presence of foot heaters and desk fans indicates an unsuitable working envir
 Different people have different temperature requirements to feel comfortable.
 Some organizations, however, mandate the zone temperature set point for both summer and winter. This often leads to comfort complaints and negatively impacts productivity. The operating staff must place comfort as a priority and adjust the room temperature set point as necessary. Workers should be asked to dress appropriately during the summer and winter to maintain their individual comfort if set points are centrally mandated for a facility. Most complaints can be eliminated when the room temperature is within the range of ASHRAE’s recommended comfort zone.
 
-3.2 Turn off Heating Systems During Summer
+3.2 夏天关掉加热系统
 --------------------------------------------
 
 Heating is not needed for most buildings during the summer. When the heating system is on, the hot water or steam often leaks through control valves, causing thermal comfort problems and consuming excessive cooling and heating energy. To improve building comfort and decrease heating and cooling energy consumption, the following actions should be taken:
@@ -45,7 +45,7 @@ This simple measure results in significant energy savings as well as improved co
 
 The building has a floor area of 147,000 sq.ft. with two dual duct VAV systems. Before closing the heating coil manual valves, the average daily steam consumption varied from a low of 0.2 MMBtu/hr to a high of approximately 0.28 MMBtu/hr. After the manual valves were closed, steam leakage was eliminated through the heating coil. The steam consumption immediately dropped to slightly above 0.10 MMBtu/hr. Since the manual valves in this building can stay closed for more than seven months, the annual steam savings are 756 MMBtu/yr. The same amount of chilled water will be saved if the building remains at the same temperature, creating cooling energy savings of 756 MMBtu/yr as well. The annual energy cost savings is $7,560 at an energy price of $5/MMBtu. This savings is not huge, but the only action required was shutting two manual valves.
 
-3.3 Turn Off Systems During Unoccupied Hours
+3.3 无人期间关掉系统
 ----------------------------------------------
 
 If a building is not occupied at night or on weekends, the HVAC system often may be turned off completely during these periods. With a properly designed warm-up/cool-down, building comfort can be maintained properly with significant energy savings. In a commercial or institutional building, office equipment and lighting make up a large portion (50% or more) of the electrical system requirements. However, a significant portion of a building (15% or more) is unoccupied during office hours due to travel, meetings, vacations, and sick leave. Turning off systems during unoccupied hours results in significant energy savings without degrading occupant comfort. This measure can be achieved by the following actions:
@@ -83,7 +83,7 @@ The measured results show that the nighttime whole building electricity use decr
 
 It was observed that the daily peak electricity consumption after night shutdowns began is significantly lower than the base peak. For example, the lowest peak during the second phase is 1,833 kW, which is 8% lower than the base peak. The lower electricity peak indicates that some office equipment remained off during the daytime or employees were more conscientious in turning off lights and equipment when they left the office. The annual energy cost savings, including electricity, heating and cooling, were determined to be $100,000/yr using measured hourly data.
 
-3.4 Slow Down Systems During Unoccupied/Lightly-Occupied Hours
+3.4 在无人/少人期间让系统部分运行
 ---------------------------------------------------------------
 
 Most large buildings are never completely unoccupied. It is not uncommon to find a few people working regardless of the time of day. The zones that may be used during the weekends or at nights, are also unpredictable. System shut down often results in complaints. Substantial savings can be achieved while maintaining comfort conditions in a building by an appropriate combination of the following actions:
@@ -111,7 +111,7 @@ The Education Building has 251,000 sq.ft. of floor area with eight 50 hp. AHUs t
     Figure 3-3. Measured (Post-CC  :sup:`SM`) Hourly Supply Fan Electricity Consumption in the Education Building
 
 
-3.5 Limit Fan Speed During Warm-Up and Cool-Down Periods
+3.5 预热和预冷期间限制风机速度
 ---------------------------------------------------------
 
 If nighttime shut down is implemented, warm-up is necessary during the winter and cool-down is required during the summer. During warm-up and cool-down periods, fan systems are often run at maximum speed since all terminal boxes require either maximum heating or maximum cooling. A simple fan speed limit can reduce fan power significantly. This principle may also be used in other systems such as pumps. The following actions should be taken to achieve the fan energy savings:
@@ -136,7 +136,7 @@ Note that if the outside air damper cannot be closed tightly, extra thermal ener
     Figure 3-4. Potential Fan Energy Savings Using Fan Speed Limiting
 
 
-3.6 Summary
+3.6 总结
 ------------
 
 Significant amounts of energy can be saved by implementing the basic CC  :sup:`SM` measures. More advanced CC  :sup:`SM` measures can be used to improve the building energy performance; however, this chapter is limited to the simple measures. Before implementing these measures, the building and HVAC system must be in good condition. Local water and air balances may be required to solve existing mechanical problems.

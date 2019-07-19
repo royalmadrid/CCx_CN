@@ -14,7 +14,7 @@ Air handler systems normally condition and distribute air inside buildings. A ty
 * Install airflow control for VAV systems
 * Improve terminal box operation
 
-4.1 Adjust Total Air Flow and Fan Head for Constant Air Volume Systems
+4.1 调整定风量系统风量及风机压头
 -------------------------------------------------------------------------
 
 Airflow rates are often significantly higher than required in buildings primarily due to system over-sizing. In some large systems, an oversized fan causes over-pressurization in terminal boxes. This excessive pressurization is the primary cause of room noise. The excessive air flow often causes excessive fan energy consumption, excessive heating and cooling energy consumption, humidity control problems and excessive noise in terminal boxes [Liu, et al. 1999].
@@ -132,7 +132,7 @@ Figure 4-3 compares the monthly gas and electricity consumption before and after
     Figure 4-3. Natural Gas and Electricity Consumption at the Materials Research Institute Before and After Implementation of CCSM Measures
 
 
-4.2 Set Minimum Outside Air Intake Correctly
+4.2 正确设置最小新风量
 ----------------------------------------------
 
 Outside air intake rates are often significantly higher than design values in existing buildings due to lack of accurate measurement, incorrect design calculation and balancing, and operation and maintenance problems. Excessive outside air intake isoften directly caused by one or more of the following:
@@ -272,7 +272,7 @@ Figure 4-5 presents the measured monthly average hourly heating energy consumpti
 
 The measured annual energy savings are 4,940 MMBtu/yr which includes 1,640 MMBtu/yr of electricity savings and 3,300 MMBtu/yr of gas savings. The annual energy use index decreased from 150,800 Btu/ft2/yr to 101,000 Btu/ft2/yr. More detailed information can be found in “An O&M Story in An Old Building” [Liu et al. 1996].
 
-4.3 Improve Static Pressure Set Point and Schedule
+4.3 改善静亚设点值和运行时刻
 --------------------------------------------------------
 
 The supply air static pressure is often used to control fan speed and ensure adequate air flow to each zone. If the static pressure set point is lower than required, some zones may experience comfort problems due to lack of air flow. If the static pressure set point is too high, fan power will be excessive. In most existing terminal boxes, proportional controllers are used to maintain the airflow set point. When the static pressure is too high, the actual air flow is higher than its set point. The additional air flow depends on the setting of the control band. Field measurements have found that the excessive air flow can be as high as 20% [Liu et al. 1997b]. 
@@ -373,7 +373,7 @@ When the VFD speed is less than 60%, the static pressure set point reduction is 
     Figure 4-6. Optimal Static Pressure Reset Schedule and Measured Static Pressure Versus the VFD Speed for AHU-P2 at the CSF Building, M.D. Anderson Cancer Center, Houston, Texas
 
 
-4.4 Optimize Supply Air Temperatures
+4.4 优化送风温度
 ----------------------------------------
 
 Supply air temperatures, cooling coil discharge air temperature for single duct systems or cold deck and hot deck temperatures for dual duct systems, are the most important operation and control parameters for AHUs. If the cold air supply temperature is too low, the AHU may remove excessive moisture during the summer using mechanical cooling. The terminal boxes must then warm the over-cooled air before sending it to each individual diffuser for a single duct AHU. More hot air is required in dual duct air handlers. The lower air temperature consumes more thermal energy in both systems. If the cold air supply temperature is too high, the building may lose comfort control. The fan must supply more air to the building during the cooling season; therefore fan power will be higher than necessary. The goal of optimal supply air temperature schedules is to minimize combined fan power and thermal energy consumption or cost. Although developing optimal reset schedules requires a comprehensive engineering analysis, improved, near optimal, schedules can be developed based on several simple rules. Guidelines for developing improved supply air temperature reset schedules are provided below for four major types of AHU systems.
@@ -582,7 +582,7 @@ Figure 4-7 compares the measured daily average chilled water energy consumption.
     Figure 4-7. Comparison of Measured Daily Average Chilled Water Consumption Before and After Implementation of the Optimal Hot and Cold Deck Temperature Reset Schedules
 
 
-4.5 Improve Economizer Operation and Control
+4.5 改善节能器运行和控制
 ---------------------------------------------
 
 An economizer is designed to eliminate mechanical cooling when the outside air temperature is lower than the supply air temperature set point and decrease mechanical cooling when the outside air temperature is between the cold deck temperature and a high temperature limit or return air conditions, typically less than 70°F. An economizer should control the supply-air temperature by modulating the o/a damper when the o/a temperature is lower than supply-air temperature set point. However, economizer control is often implemented to maintain mixed air temperature at 55°F. This control algorithm is far from optimum. It may, in fact, actually increase the building energy consumption. Economizer operation can be improved using the following steps:
@@ -648,7 +648,7 @@ Figures 4-8, 4-9 and 4-10 present the hourly fan power, heating and cooling ener
     Figure 4-10. Measured Hourly Cooling Energy Consumption of the Nursing Building in Austin Texas
 
 
-4.6 Improve Coupled Control AHU Operation
+4.6 改善AHU运行耦合控制
 -------------------------------------------------
 
 .. sidebar:: **Note**
@@ -737,7 +737,7 @@ Figure 4-13 compares the measured hourly chilled water energy consumption before
     Figure 4-14. Comparison of Hot Water Energy Consumption Before and After Implementation of CCSM Measures
 
 
-4.7 Valve Off Hot Air flow for Dual Duct AHUs During Summer
+4.7 夏季双风道AHU关闭热风阀门
 -----------------------------------------------------------------
 
 During the summer, most commercial buildings do not need heating. Theoretically, hot air should be zero for dual duct VAV systems. However, hot air leakage through terminal boxes is often significant due to excessive static pressure on the hot air damper. For constant air volume systems, hot air flow is often up to 30% of the total air flow. During summer months, hot air temperatures as high as 140°F have been observed due to hot water leakage through valves [Liu et al. 1998b]. The excessively high hot air temperature often causes hot complaints in some locations. Eliminating this hot air flow can improve building thermal comfort, reduce fan power, cooling consumption and heating consumption [Liu and Claridge 1999]. This measure should be implemented using one of the following methods:
@@ -840,7 +840,7 @@ Table 4-2 summarizes the measured annual energy savings. The measured cost savin
 
 Note: Energy prices for electricity: $0.03470/kWh, $10.32/kW; chilled water price: $3.25/MMBtu; and hot water price: $3.84/MMBtu
 
-4.8 Install VFD on Constant Air Volume Systems
+4.8 定风量系统安装VFD
 ------------------------------------------------------
 
 
@@ -910,7 +910,7 @@ Figure 4-20 compares the measured hourly supply fan power for the constant speed
 
     Figure 4-20. Measured Hourly Supply Air Fan Power for Both the CSFS and VSFS Operations
 
-4.9 Airflow Control for VAV Systems
+4.9 VAV系统风量控制
 ----------------------------------------
 
 Airflow control of VAV systems has been an important design and research subject since the VAV system was introduced. An airflow control method should: (1) ensure sufficient air flow to each space or zone, (2) control outside air intake properly, and (3) maintain a positive building pressure. These goals can be achieved using the variable speed drive volume tracking (VSDVT) method.
@@ -988,7 +988,7 @@ Figure 4-24 presents simulated VSDVT fan power savings compared with the typical
 
     Figure 4-24. Potential Fan Power Savings of the VSDVT Method
 
-4.10 Improve Terminal Box Operation
+4.10 改善末端风盒运行
 ------------------------------------------
 
 The terminal box is the end device of the AHU system. It directly controls room temperature and air flow. Improving the set up and operation are critical for room comfort and energy efficiency. The following CCSM measures are suggested:

@@ -4,7 +4,7 @@
 
 Two detailed CCSM projects are presented to demonstrate the process and the energy efficiency and comfort improvements. Although numerous case studies were presented throughout the guidelines, the complete presentations of the case studies provide opportunities for readers to understand and learn the detailed techniques. The first case study is the Zachry Engineering Center (ZEC) located on the Texas A&M University Campus, College Station, Texas. The CCSM was conducted after a successful energy retrofit. The second example is the Brooke Army Medical Center (BAMC) located in San Antonio, Texas. The CCSM was conducted three years after completion of the building. This is considered as a CCSM project for a new building.
 
-Project 1: Zachry Engineering Center Continuous CommissioningSM
+项目 1: Zachry工程中心连续调试
 -----------------------------------------------------------------
 
 Zachry Engineering Center (ZEC) is a 340,000 sq.ft. teaching and research building, located on the Texas A&M University campus. The building has four floors and a heated-only parking garage in the basement. It was constructed in the early 1970s and has heavy concrete floors and insulated exterior walls made of pre-cast concrete and porcelain-plated steel panels. Approximately 12% of the exterior wall area is covered with single-pane, bronze-tinted glazing. The windows are recessed approximately four feet from the exterior walls, providing some shading. 
@@ -161,7 +161,7 @@ The annualized consumption values for the baseline, post-retrofit and post-CCSM 
     Figure A-7. ZEC Daily Hot Water Consumption for 1990 Before the Retrofit, 1994 After the Retrofit and 1997 After CCSM
 
 
-Project 2: Brooke Army Medical Center Continuous CommissioningSM
+项目 2: Brooke Army 医疗中心连续调试
 ---------------------------------------------------------------------
 
 The Brooke Army Medical Center (BAMC) was a relatively new facility when the Energy Systems Laboratory (ESL) was hired to commission it. The facility was operated for the Army by a third-party company, and was operated in accordance with the original design intent. As has been discussed throughout this guidebook, the CCSM process looks at the facility as it is being operated and attempts to optimize the energy-using systems. This case study illustrates a wide range of CCSM opportunities.

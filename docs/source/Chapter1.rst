@@ -57,7 +57,7 @@ efficiently.*
 
 .. |CCSM| replace:: CC\ :sup:`SM`\
 
-1.1 Definition
+1.1 定义
 ---------------
 
 Continuous Commissioning  :sup:`SM` (CC  :sup:`SM`) is an ongoing process to resolve operating problems,
@@ -99,7 +99,7 @@ The CC  :sup:`SM` technician will conduct field measurements and implement mecha
 electrical, and control system program modifications and changes, under the direction
 of the CC  :sup:`SM` engineer.
 
-1.2 Process
+1.2 过程
 -------------
 
 The CC  :sup:`SM` process consists of two phases. The first phase is the project development

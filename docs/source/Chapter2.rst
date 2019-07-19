@@ -24,7 +24,7 @@ and a detailed example is presented.
     The ESL engineers applied the CC process to LoanSTAR buildings where it resolved major comfort complaints 
     and decreased whole building energy consumption by another 15% to 30%.
 
-2.1 Economics of CC  :sup:`SM`
+2.1 连续调试的经济性
 --------------------------------
 
 The energy savings and costs are well documented in more than 130 buildings commissioned by the ESL. CC  :sup:`SM` costs consist of commissioning labor costs, metering costs, and energy savings determination and reporting costs. Note that the costs of replacing broken or damaged parts are generally covered by the maintenance budget and have not been charged to the CC  :sup:`SM` effort. The energy savings are normally determined using measured hourly energy consumption data. No credit is given to productivity increases by occupants as a result of improved comfort and lower absenteeism because of lack of documentation of this benefit. Credible anecdotal evidence, however, suggests that occupant productivity can increase substantially when facility IAQ and comfort improve.
@@ -111,7 +111,7 @@ When an EMCS is used to measure whole building electricity, chilled water, and h
 When hourly data are available, a statistical regression model can be used to determine the savings accurately. The cost varies from $3,000 to $4,000 per building. This cost includes the baseline model development, database management, savings analysis and reporting.
 The metering cost is likely to decrease as more meters are installed as part of building automation systems. When existing meters are used, sensor calibration should be conducted first to verify the sensor accuracy and operating range. For example, a differential pressure transmitter with a 100 in H2O range may be used to transfer a signal with a maximum value of 10 in H2O. In this case, the sensor should be replaced due to a mismatch of the signal range with the sensor range.
 
-2.2 Benefits of CC  :sup:`SM`
+2.2 连续调试的收益
 ------------------------------
 
 The CC  :sup:`SM` process uniquely combines four features that make it an attractive engineering process. These four features are (1) sustainable engineering solutions to operational problems, (2) superior energy and comfort performance, (3) increased staff skills and (4) service as an enabling factor for a comprehensive facility overhaul. Each feature is discussed below and examples are given.
@@ -174,7 +174,7 @@ The positive results of the CC  :sup:`SM` project accelerated the process of upg
     Figure 2-2. Accumulated Project Cost, Energy Cost Savings and Positive Cash Flow at Texas A&M University, College Station Campus
 
 
-2.3 CC  :sup:`SM` Project Example
+2.3 连续调试项目案例
 ----------------------------------
 
 Riverside North is an extended-care mental health facility built in 1962 as one of the Fairview University Medical Center hospitals in Minneapolis, Minnesota. The gross floor area is approximately 37,300 sq. ft. on four floors, excluding the basement. The building receives steam from a district steam plant and chilled water from a central campus plant. Two major air-handling units (AHUs) serve the entire building with induction terminal units. The AHUs each have 20 hp. supply fans and 10 hp. return fans operated at a constant speed 24 hours per day. Hot water supplied by steam to hot water converters is circulated to reheat coils and supplemental perimeter radiation by four 7.5 hp. pumps. The supplemental perimeter radiation system was turned on manually at outdoor temperatures below approximately 10°F and was automatically reset over a range of 120°F to 180°F when the outside air temperature varied from 10°F to -20°F. Chilled water is circulated through the building by a 10 hp. pump with a variable frequency drive located in the basement. The building has unitary controllers and a supervisory control building automation system.
@@ -298,7 +298,7 @@ Table 2-5 summarizes the measured energy cost savings, cost and payback. The mea
     +----------------------------------------------------+--------+
 
 
-2.4 Summary
+2.4 总结
 ------------
 
 The Continuous CommissioningSM process typically provides payback in less than three years and often in less than two years. Project duration typically varies from three to six months per building.

@@ -3,7 +3,8 @@
 
 The central chiller plant includes chillers, cooling towers, a primary water distribution system and the condenser water distribution system. Although a secondary pumping system may be physically located inside the central plant, commissioning issues dealing with secondary loops are discussed in Chapter 5. The central chiller plant produces chilled water using electricity, steam, hot water or gas. The detailed commissioning measures vary with the type of chiller. This chapter is designed to give the general commissioning measures that apply to a typical central cooling plant that can produce significant energy savings.
 
-6.1 Use the Most Efficient Chillers
+6.1 采用效率最高的冷机
+----------------------------------------
 
 Most central chiller plants have several chillers with different performance factors or efficiencies. The differences in performance may be due to the design, performance degradation, age or operational problems. One chiller may have a higher efficiency at a high load ratio while another may have a higher efficiency at a lower load ratio. Running chillers with the highest performance can result in significant energy savings and will also reduce the number of complaints because you will be providing the greatest output for the least input.
 
@@ -23,7 +24,7 @@ Record all other important operating parameters such as condenser supply and ret
 
 For turbine-driven and absorption chillers, the performance is evaluated using the ratio of the tonnage over the heat input. Both heat input and chilled water production should use the same units. The appropriate manual should be consulted for accurate techniques to use for measuring steam and gas energy.
 
-6.2 Reset the Supply Water Temperature
+6.2 重设供水温度
 ----------------------------------------
 
 Increasing the chilled water supply temperature can decrease chiller electricity consumption significantly. The general rule-of-thumb is that a one-degree Fahrenheit increase corresponds to a decrease in compressor electricity consumption of 1.7%. The chilled water supply temperature can be reset based on cooling load or ambient conditions.
@@ -51,7 +52,7 @@ Increasing chilled water temperature may increase distribution pump (secondary p
 
 The chilled water supply temperature reset directly impacts the dehumidification capability of the coils. The chilled water supply temperature should not be reset to a higher value until the ambient humidity ratio is less than 0.009 or the ambient dew point temperature is less than 57°F for typical facilities.
 
-6.3 Reset Condenser Return Water Temperature
+6.3 重设冷却水回水温度
 ---------------------------------------------
 
 Decreasing cooling tower return water temperature has the same effect as increasing the chilled water supply temperature. The cooling tower return temperature should be reset based on weather conditions. The following provides general guidelines:
@@ -116,7 +117,7 @@ The projected savings from implementing the supply temperature reset schedule an
 
 More information can be found in “Use of EMCS Recorded Data to Identify Potential Savings Due to Improved HVAC Operations and Maintenance,” [Liu et al. 1997].
 
-6.4 Increase Chilled Water Return Temperature
+6.4 增加冷水回水温度
 ------------------------------------------------
 
 Increasing chilled water return temperature has the same effect as increasing chilled water supply temperature. It can also significantly decrease the secondary pump power because the higher the return water temperature (for a given supply temperature), the lower the chilled water flow. The following measures should be used to increase the chilled water return temperature.
@@ -148,7 +149,7 @@ Mclnnis is a university campus building in central Texas. The design differentia
 
     Figure 6-4. Measured Chilled Water Supply and Return Water Temperature After Building Commissioning (the building differential temperature was less than 10°F before commissioning)
 
-6.5 Use Variable Flow under Partial Load Conditions
+6.5 部分负荷情况下采用变风量
 ------------------------------------------------------
 
 Typical central plants use primary and secondary loops. A constant speed primary pump is often dedicated to a particular chiller. When the chiller is turned on, the pump is on. Chilled water flow through each chiller is maintained at the design flow rate by this operating schedule. When the building-loop flow is less than the chiller loop flow, part of the chiller flow bypasses the building and returns to the chiller.
@@ -198,7 +199,7 @@ Varying chilled water flow through a chiller can result in significant pump powe
 
 Varying chilled water flow through the chillers will also increase the chiller efficiency when compared to constant water flow with chilled water bypass. More information can be found in “Variable Water Flow Pumping for Central Chilled Water Systems” [Liu 2002].
 
-6.6 Optimize Chiller Staging
+6.6 优化冷机台数控制
 -------------------------------
 
 For most chillers, the kW/ton decreases (COP increases) as the load ratio increases from 40% to 80%. When the load ratio is too low, the capacity modulation device in the chiller lowers the chiller efficiency. When the chiller has a moderate load, the capacity modulation device has reasonable efficiency. The condenser and evaporator are oversized for the load under this condition so the chiller efficiency is higher. 
@@ -221,7 +222,7 @@ If the building bypass cannot be closed, the minimum chiller load ratio should b
 
 A single loop may be used for some plants. In this case, a control schedule can be developed to share primary pumps under partial load conditions. For example, when the load is less than 50% for two chillers, a single pump can sometimes be used. If two pumps are used, the central plant may use approximately the same amount of energy as one chiller at peak load.
 
-6.8 Maintain Good Operating Practices
+6.8 维护保养运行实践
 ----------------------------------------
 
 It is important to follow the operating procedures recommended by the manufacturer. It is important to calibrate the temperature, pressure and current sensors and flow switches periodically. The temperature sensors are especially important for maintaining efficient operation. Control parameters must be set properly, particularly the time delay relay.

@@ -9,7 +9,7 @@ Central heating plants produce hot water, steam, or both, typically using either
 
     Figure 7-1. Steam and Hot Water Boilers
 
-7.1 Optimize Supply Water Temperature and Steam Pressure
+7.1 优化供水温度和蒸汽压力
 -----------------------------------------------------------
 
 Steam pressure and hot water temperature are the most important safety parameters for a central heating plant. Reducing the boiler steam pressure and hot water temperature have numerous benefits including:
@@ -98,7 +98,7 @@ Note: Actual energy savings are higher than $82,000/yr since the steam pressure 
 
 In 1995, the steam pressure was reset to 100 psig. In 1996, the operating staff tried to lower the steam pressure to 70 psig. However, the boiler shut down automatically because 70 psig was out of the controller range. Since 1996, the central plant has been providing steam pressure at 100 psig to the UTMB campus. The steam pressure reset improved plant safety and decreased gas consumption as well.
 
-7.2 Optimize Feed Water Pump Operation
+7.2 优化给水泵运行
 ---------------------------------------
 
 The feed water pump is sized based on boiler design pressure. Since most boilers operate below the design pressure, the feed water pump head is often significantly higher than required. This excessive pump head is often dropped across pressure reducing valves and manual valves. Installing a VSD on the feed water pump in these cases can decrease pump power consumption and improve control performance. The need for a VSD and the potential savings can be evaluated using the following procedures:
@@ -130,7 +130,7 @@ EXAMPLE:
 
 The thermal energy plant at UTMB Galveston, previously discussed, produced a total of 300,000,000 lbm of steam from April 1993 to March 1994. If the boiler steam pressure is decreased from 150 psi to 100 psi, the feedwater pump head reduction is 50 psi. The pump efficiency is approximately 0.8. If a VFD is installed on the feedwater pump, the annual pump power energy savings are 782 MWh. The savings are $39,000/yr at $0.05/kWh.
 
-7.3 Optimize Airside Operation
+7.3 优化空气侧运行
 -------------------------------
 
 The key issues are excessive air flow and flue gas temperature control. Some excess air flow is required to improve the combustion efficiency and avoid having insufficient combustion air during fluctuations in air flow. However, excessive air flow will consume more thermal energy since it must be heated from the outside air temperature to the flue gas temperature. The boiler efficiency decreases as excessive air flow increases. The flue gas temperature should be controlled properly. If the flue gas temperature is too low, acid condensation can occur in the flue. If the flue gas temperature is too high, it carries out too much thermal energy. The airside optimization starts with a combustion analysis, that determines the combustion efficiency based on the flue gas composition, flue gas temperature and fuel composition. The typical combustion efficiency should be higher than 80%. If the combustion efficiency is lower than this value, the following procedures can be used to determine the reasons:
@@ -210,7 +210,7 @@ If the air leakage rate was reduced from 27% to 10%, it would result in the foll
 
 The total annual cost savings is $282,600/yr.
 
-7.4 Optimize Boiler Staging
+7.4 优化锅炉级数
 ----------------------------
 
 Most central plants have more than one boiler. Using optimal staging can improve plant energy efficiency and reduce maintenance cost. The optimal staging should be developed using the following guidelines:
@@ -239,7 +239,7 @@ If the boiler efficiency cannot be determined using this method, combustion effi
 
 Boiler staging involves boiler shut-off, start-up and standby. Because of the large thermal inertial and temperature changes between shut-off, standby and normal operation, precautions must be taken to prevent corrosion and expansion damage. Generally speaking, short-term (monthly) turn on/off should be avoided for steam boilers. Hot water boilers are sometimes operated to provide water temperatures as low as 80°F. This improves distribution efficiency, but may lead to acid condensate in the flue. The hot water temperature must be kept high enough to prevent this condensation.
 
-7.5 Improve Multiple Heat Exchanger Operation
+7.5 改善多台换热器运行
 -----------------------------------------------
 
 Heat exchangers are often used in central plants or buildings to convert steam to hot water or high temperature hot water to lower temperature hot water. If more than one heat exchanger is installed, use as many heat exchangers as possible provided the average load ratio is 30% or higher. This approach provides the following benefits:
@@ -258,7 +258,7 @@ Heat exchangers are often used in central plants or buildings to convert steam t
 
 Using more heat exchangers will result in more heat loss. If the load ratio is higher than 30%, the benefits mentioned above normally outweigh the heat loss. More information can be found in “System Optimization Saves $195,000/yr in a New Facility” [Liu et al. 1998].
 
-7.6 Maintain Good Operating Practices
+7.6 保持良好运行实践
 ---------------------------------------
 
 Central plant operation involves energy efficiency and safety issues. Proper safety and maintenance guidelines should be followed. The following maintenance issues should be carefully addressed:
